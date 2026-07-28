@@ -1,0 +1,1745 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Saku — Persiapan Penilaian Kepatuhan Ombudsman RI</title>
+    <meta name="description" content="Buku Saku Digital untuk Kepala OPD dalam menghadapi Penilaian Kepatuhan Standar Pelayanan Publik oleh Ombudsman RI">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ═══════════════════════════════════════════
+           DESIGN SYSTEM & CSS VARIABLES
+           ═══════════════════════════════════════════ */
+        :root {
+            --color-primary: #1a3a5c;
+            --color-primary-light: #2a5a8c;
+            --color-primary-dark: #0f2440;
+            --color-accent: #e8963e;
+            --color-accent-light: #f5b76b;
+            --color-accent-dark: #c47a2a;
+            --color-success: #2ecc71;
+            --color-danger: #e74c3c;
+            --color-warning: #f39c12;
+            --color-info: #3498db;
+            --color-bg: #f0f2f5;
+            --color-card: #ffffff;
+            --color-text: #1a1a2e;
+            --color-text-secondary: #5a6178;
+            --color-border: #e2e6ed;
+            --color-highlight: #fffbf0;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.04);
+            --shadow-lg: 0 10px 25px rgba(0,0,0,0.08), 0 4px 10px rgba(0,0,0,0.04);
+            --shadow-xl: 0 20px 50px rgba(0,0,0,0.12), 0 8px 20px rgba(0,0,0,0.06);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+            --font-heading: 'Plus Jakarta Sans', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* ═══════════════════════════════════════════
+           RESET & BASE
+           ═══════════════════════════════════════════ */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.7;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ═══════════════════════════════════════════
+           HEADER & NAVIGATION
+           ═══════════════════════════════════════════ */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(26, 58, 92, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            transition: var(--transition);
+        }
+
+        .header.scrolled {
+            box-shadow: 0 4px 30px rgba(0,0,0,0.15);
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            box-shadow: 0 4px 12px rgba(232, 150, 62, 0.3);
+        }
+
+        .logo-text {
+            font-family: var(--font-heading);
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: -0.3px;
+        }
+
+        .logo-subtitle {
+            font-size: 11px;
+            color: rgba(255,255,255,0.6);
+            font-weight: 400;
+            display: block;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 4px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: rgba(255,255,255,0.75);
+            font-size: 13px;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: var(--radius-sm);
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: #fff;
+            background: rgba(255,255,255,0.1);
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        /* ═══════════════════════════════════════════
+           HERO SECTION
+           ═══════════════════════════════════════════ */
+        .hero {
+            margin-top: 70px;
+            background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 40%, var(--color-primary-light) 100%);
+            padding: 80px 24px 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(232,150,62,0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(52,152,219,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(232,150,62,0.15);
+            border: 1px solid rgba(232,150,62,0.3);
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 13px;
+            color: var(--color-accent-light);
+            font-weight: 500;
+            margin-bottom: 24px;
+            animation: fadeInDown 0.6s ease;
+        }
+
+        .hero h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(28px, 5vw, 48px);
+            font-weight: 800;
+            color: #fff;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+            animation: fadeInUp 0.6s ease 0.1s both;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: clamp(15px, 2vw, 18px);
+            color: rgba(255,255,255,0.7);
+            max-width: 650px;
+            margin: 0 auto 32px;
+            line-height: 1.7;
+            animation: fadeInUp 0.6s ease 0.2s both;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            animation: fadeInUp 0.6s ease 0.3s both;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat-number {
+            font-family: var(--font-heading);
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--color-accent);
+        }
+
+        .hero-stat-label {
+            font-size: 12px;
+            color: rgba(255,255,255,0.5);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 4px;
+        }
+
+        /* ═══════════════════════════════════════════
+           MAIN CONTENT
+           ═══════════════════════════════════════════ */
+        .main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 48px;
+            animation: fadeInUp 0.5s ease both;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 28px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        .section-number {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-size: 20px;
+            font-weight: 800;
+            color: #fff;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(26,58,92,0.3);
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--color-primary-dark);
+            letter-spacing: -0.3px;
+        }
+
+        .section-indicator {
+            font-size: 13px;
+            color: var(--color-accent-dark);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Card Styles */
+        .card {
+            background: var(--color-card);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            margin-bottom: 20px;
+            border: 1px solid var(--color-border);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .card-title {
+            font-family: var(--font-heading);
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card-title .icon {
+            font-size: 22px;
+        }
+
+        .card p, .card li {
+            color: var(--color-text-secondary);
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .card ul, .card ol {
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        .card li {
+            margin-bottom: 8px;
+        }
+
+        .card li::marker {
+            color: var(--color-accent);
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: linear-gradient(135deg, #fffbf0, #fff8e7);
+            border: 1px solid rgba(232,150,62,0.25);
+            border-left: 4px solid var(--color-accent);
+            border-radius: var(--radius-md);
+            padding: 20px 24px;
+            margin: 16px 0;
+        }
+
+        .highlight-box.blue {
+            background: linear-gradient(135deg, #f0f7ff, #e8f2ff);
+            border-color: rgba(52,152,219,0.25);
+            border-left-color: var(--color-info);
+        }
+
+        .highlight-box.green {
+            background: linear-gradient(135deg, #f0fdf4, #e8fae8);
+            border-color: rgba(46,204,113,0.25);
+            border-left-color: var(--color-success);
+        }
+
+        .highlight-box.red {
+            background: linear-gradient(135deg, #fdf0f0, #fae8e8);
+            border-color: rgba(231,76,60,0.25);
+            border-left-color: var(--color-danger);
+        }
+
+        .highlight-box strong {
+            color: var(--color-primary-dark);
+        }
+
+        .highlight-box p {
+            font-size: 14.5px;
+            color: var(--color-text);
+        }
+
+        /* Definition Box */
+        .definition {
+            background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+            color: #fff;
+            border-radius: var(--radius-lg);
+            padding: 28px 32px;
+            margin: 20px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .definition::after {
+            content: '📖';
+            position: absolute;
+            right: 20px;
+            bottom: -5px;
+            font-size: 80px;
+            opacity: 0.08;
+        }
+
+        .definition-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--color-accent-light);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .definition p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: rgba(255,255,255,0.92);
+        }
+
+        .definition strong {
+            color: var(--color-accent-light);
+        }
+
+        /* Table Styles */
+        .table-wrapper {
+            overflow-x: auto;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-border);
+            margin: 16px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        thead {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+        }
+
+        th {
+            padding: 14px 18px;
+            text-align: left;
+            color: #fff;
+            font-weight: 600;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+
+        td {
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--color-border);
+            color: var(--color-text-secondary);
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) {
+            background: #fafbfc;
+        }
+
+        tr:hover {
+            background: #f5f7fa;
+        }
+
+        td:first-child {
+            font-weight: 600;
+            color: var(--color-primary);
+            white-space: nowrap;
+        }
+
+        /* Numbered List Styled */
+        .numbered-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 16px;
+            margin: 16px 0;
+        }
+
+        .numbered-item {
+            background: var(--color-card);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            padding: 18px 20px;
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            transition: var(--transition);
+        }
+
+        .numbered-item:hover {
+            border-color: var(--color-accent);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .numbered-item .num {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: #fff;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        .numbered-item .num.red {
+            background: linear-gradient(135deg, #e74c3c, #ff6b6b);
+        }
+
+        .numbered-item h4 {
+            font-family: var(--font-heading);
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--color-primary-dark);
+            margin-bottom: 4px;
+        }
+
+        .numbered-item p {
+            font-size: 13px;
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Accordion */
+        .accordion {
+            margin: 16px 0;
+        }
+
+        .accordion-item {
+            background: var(--color-card);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            margin-bottom: 8px;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .accordion-item:hover {
+            border-color: var(--color-primary-light);
+        }
+
+        .accordion-header {
+            padding: 18px 24px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--color-primary);
+            font-size: 15px;
+            user-select: none;
+            transition: var(--transition);
+        }
+
+        .accordion-header:hover {
+            background: #f8f9fb;
+        }
+
+        .accordion-header .arrow {
+            transition: transform 0.3s ease;
+            font-size: 12px;
+            color: var(--color-text-secondary);
+        }
+
+        .accordion-item.open .accordion-header .arrow {
+            transform: rotate(180deg);
+        }
+
+        .accordion-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+        }
+
+        .accordion-item.open .accordion-body {
+            max-height: 2000px;
+            padding: 0 24px 20px;
+        }
+
+        .accordion-body p, .accordion-body li {
+            font-size: 14.5px;
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+        }
+
+        .accordion-body ul {
+            padding-left: 18px;
+            margin-top: 8px;
+        }
+
+        .accordion-body li {
+            margin-bottom: 6px;
+        }
+
+        /* Tips Box */
+        .tips-box {
+            background: linear-gradient(135deg, #f0fdf4, #e0f8e6);
+            border: 1px solid rgba(46,204,113,0.2);
+            border-radius: var(--radius-lg);
+            padding: 24px 28px;
+            margin: 20px 0;
+        }
+
+        .tips-box h4 {
+            font-family: var(--font-heading);
+            color: #1a8a4a;
+            font-size: 16px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tips-box ul {
+            padding-left: 18px;
+        }
+
+        .tips-box li {
+            font-size: 14px;
+            color: #2d6a4f;
+            margin-bottom: 6px;
+            line-height: 1.7;
+        }
+
+        /* Quick Reference Card */
+        .quick-ref {
+            background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+            border-radius: var(--radius-xl);
+            padding: 36px;
+            margin: 32px 0;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .quick-ref::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(232,150,62,0.2) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .quick-ref h3 {
+            font-family: var(--font-heading);
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .quick-ref-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 16px;
+            position: relative;
+        }
+
+        .quick-ref-item {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: var(--radius-md);
+            padding: 16px;
+            backdrop-filter: blur(10px);
+        }
+
+        .quick-ref-item h4 {
+            font-size: 13px;
+            color: var(--color-accent-light);
+            font-weight: 600;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .quick-ref-item p {
+            font-size: 14px;
+            color: rgba(255,255,255,0.85);
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--color-primary-dark);
+            padding: 32px 24px;
+            text-align: center;
+            color: rgba(255,255,255,0.5);
+            font-size: 13px;
+        }
+
+        .footer a {
+            color: var(--color-accent-light);
+            text-decoration: none;
+        }
+
+        /* Print Styles */
+        @media print {
+            .header { position: static; }
+            .hero { margin-top: 0; padding: 40px 20px; }
+            .card:hover { transform: none; box-shadow: none; }
+            .numbered-item:hover { transform: none; }
+            body { font-size: 12px; }
+            .no-print { display: none !important; }
+            .accordion-body { max-height: none !important; padding: 0 24px 20px !important; }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Scroll to top button */
+        .scroll-top {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            box-shadow: var(--shadow-lg);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: var(--transition);
+            z-index: 999;
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .nav-links.open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: rgba(26,58,92,0.98);
+                padding: 16px;
+                gap: 4px;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+            .mobile-toggle { display: block; }
+            .hero { padding: 50px 20px 40px; }
+            .hero-stats { gap: 24px; flex-wrap: wrap; }
+            .hero-stat-number { font-size: 24px; }
+            .section-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+            .numbered-grid { grid-template-columns: 1fr; }
+            .quick-ref-grid { grid-template-columns: 1fr; }
+            .card { padding: 20px; }
+            .quick-ref { padding: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════════
+         HEADER & NAVIGATION
+         ═══════════════════════════════════════════ -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <div class="logo-icon">📘</div>
+                <div>
+                    <span class="logo-text">Buku Saku</span>
+                    <span class="logo-subtitle">Penilaian Kepatuhan Ombudsman</span>
+                </div>
+            </a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#indikator1" class="active">Lembaga Ombudsman</a></li>
+                    <li><a href="#indikator2">Maladministrasi</a></li>
+                    <li><a href="#indikator3">Pengaduan</a></li>
+                    <li><a href="#ringkasan">Ringkasan</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">☰</button>
+        </div>
+    </header>
+
+    <!-- ═══════════════════════════════════════════
+         HERO SECTION
+         ═══════════════════════════════════════════ -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">📋 Panduan Persiapan Penilaian Kepatuhan</div>
+            <h1>Buku Saku <span>Ombudsman RI</span></h1>
+            <p>Panduan ringkas untuk Kepala OPD dalam memahami indikator pengetahuan yang dinilai pada Penilaian Kepatuhan Standar Pelayanan Publik oleh Ombudsman Republik Indonesia.</p>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-number">3</div>
+                    <div class="hero-stat-label">Indikator Utama</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">9</div>
+                    <div class="hero-stat-label">Bentuk Maladministrasi</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">∞</div>
+                    <div class="hero-stat-label">Komitmen Pelayanan</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         MAIN CONTENT
+         ═══════════════════════════════════════════ -->
+    <main class="main">
+
+        <!-- ═══════════════════════════════════════
+             INDIKATOR 1 — LEMBAGA OMBUDSMAN
+             ═══════════════════════════════════════ -->
+        <section class="section" id="indikator1">
+            <div class="section-header">
+                <div class="section-number">1</div>
+                <div>
+                    <div class="section-indicator">Indikator 1</div>
+                    <h2 class="section-title">Pengetahuan tentang Lembaga Ombudsman</h2>
+                </div>
+            </div>
+
+            <!-- Definisi -->
+            <div class="definition">
+                <div class="definition-label">Definisi Resmi</div>
+                <p><strong>Ombudsman Republik Indonesia</strong> adalah lembaga negara yang bersifat <strong>mandiri</strong> dan <strong>tidak memiliki hubungan organik</strong> dengan lembaga negara dan instansi pemerintahan lainnya, yang bertugas <strong>mengawasi penyelenggaraan pelayanan publik</strong> baik yang diselenggarakan oleh penyelenggara negara dan pemerintahan, termasuk yang diselenggarakan oleh BUMN, BUMD, dan Badan Swasta atau perseorangan yang diberi tugas menyelenggarakan pelayanan publik tertentu yang sebagian atau seluruh dananya bersumber dari APBN dan/atau APBD.</p>
+            </div>
+
+            <!-- Dasar Hukum -->
+            <div class="card">
+                <h3 class="card-title"><span class="icon">⚖️</span> Dasar Hukum</h3>
+                <ul>
+                    <li><strong>UU Nomor 37 Tahun 2008</strong> tentang Ombudsman Republik Indonesia</li>
+                    <li><strong>UU Nomor 25 Tahun 2009</strong> tentang Pelayanan Publik</li>
+                    <li><strong>Peraturan Ombudsman RI Nomor 22 Tahun 2016</strong> tentang Penilaian Kepatuhan terhadap Standar Pelayanan Publik</li>
+                </ul>
+            </div>
+
+            <!-- Tugas Ombudsman -->
+            <div class="card">
+                <h3 class="card-title"><span class="icon">📋</span> Tugas Pokok Ombudsman RI</h3>
+                <ol>
+                    <li>Menerima laporan atas dugaan <strong>maladministrasi</strong> dalam penyelenggaraan pelayanan publik</li>
+                    <li>Melakukan <strong>pemeriksaan substansi</strong> atas laporan</li>
+                    <li>Menindaklanjuti laporan yang tercakup dalam ruang lingkup kewenangan Ombudsman</li>
+                    <li>Melakukan <strong>investigasi</strong> atas prakarsa sendiri terhadap dugaan maladministrasi</li>
+                    <li>Melakukan <strong>koordinasi dan kerja sama</strong> dengan lembaga negara atau lembaga pemerintahan lainnya serta lembaga kemasyarakatan dan perseorangan</li>
+                    <li>Membangun jaringan kerja</li>
+                    <li>Melakukan upaya <strong>pencegahan maladministrasi</strong> dalam penyelenggaraan pelayanan publik</li>
+                    <li>Melakukan tugas lain yang diberikan oleh undang-undang</li>
+                </ol>
+            </div>
+
+            <!-- Fungsi & Wewenang -->
+            <div class="card">
+                <h3 class="card-title"><span class="icon">🔍</span> Fungsi Ombudsman</h3>
+                <p>Ombudsman berfungsi <strong>mengawasi penyelenggaraan pelayanan publik</strong> yang diselenggarakan oleh Penyelenggara Negara dan pemerintahan baik di pusat maupun di daerah termasuk yang diselenggarakan oleh BUMN, BUMD, dan Badan Swasta atau perseorangan yang diberi tugas menyelenggarakan pelayanan publik tertentu.</p>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title"><span class="icon">⚡</span> Wewenang Ombudsman RI</h3>
+                <ul>
+                    <li>Meminta keterangan secara lisan dan/atau tertulis dari Pelapor, Terlapor, atau pihak lain yang terkait</li>
+                    <li>Memeriksa keputusan, surat-menyurat, atau dokumen lain yang ada pada Pelapor ataupun Terlapor</li>
+                    <li>Meminta klarifikasi dan/atau salinan atau fotokopi dokumen yang diperlukan</li>
+                    <li>Melakukan pemanggilan terhadap Pelapor, Terlapor, dan pihak lain yang terkait</li>
+                    <li>Menyelesaikan laporan melalui <strong>mediasi dan konsiliasi</strong> atas permintaan para pihak</li>
+                    <li>Membuat <strong>rekomendasi</strong> mengenai penyelesaian laporan</li>
+                    <li>Demi kepentingan umum mengumumkan hasil temuan, kesimpulan, dan rekomendasi</li>
+                    <li>Menyampaikan saran kepada presiden, kepala daerah, atau pimpinan Penyelenggara Negara lainnya guna perbaikan dan penyempurnaan organisasi dan/atau prosedur pelayanan publik</li>
+                </ul>
+            </div>
+
+            <!-- Penilaian Kepatuhan -->
+            <div class="card">
+                <h3 class="card-title"><span class="icon">📊</span> Tentang Penilaian Kepatuhan</h3>
+                <p style="margin-bottom: 12px;">Penilaian Kepatuhan adalah kegiatan yang dilakukan Ombudsman RI untuk menilai tingkat kepatuhan penyelenggara pelayanan publik terhadap standar pelayanan publik sesuai UU 25/2009.</p>
+                
+                <div class="highlight-box">
+                    <p><strong>🎯 Tujuan Penilaian Kepatuhan:</strong></p>
+                    <ul style="padding-left: 18px; margin-top: 8px;">
+                        <li>Mendorong kepatuhan penyelenggara terhadap standar pelayanan publik</li>
+                        <li>Meningkatkan kualitas pelayanan publik secara nasional</li>
+                        <li>Memberikan penilaian dan pemeringkatan kepatuhan</li>
+                        <li>Sebagai upaya <strong>pencegahan maladministrasi</strong></li>
+                    </ul>
+                </div>
+
+                <div class="highlight-box blue">
+                    <p><strong>📌 Kategori Penilaian (Zona):</strong></p>
+                    <ul style="padding-left: 18px; margin-top: 8px;">
+                        <li>🟢 <strong>Zona Hijau</strong> — Kepatuhan Tinggi (skor 88–110)</li>
+                        <li>🟡 <strong>Zona Kuning</strong> — Kepatuhan Sedang (skor 55–87,99)</li>
+                        <li>🔴 <strong>Zona Merah</strong> — Kepatuhan Rendah (skor 0–54,99)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tips-box">
+                <h4>💡 Tips Menjawab Pertanyaan Indikator 1</h4>
+                <ul>
+                    <li>Pastikan Anda hafal <strong>definisi Ombudsman</strong> sebagai lembaga negara yang mandiri</li>
+                    <li>Sebutkan <strong>UU 37/2008</strong> dan <strong>UU 25/2009</strong> sebagai dasar hukum utama</li>
+                    <li>Tekankan bahwa fungsi utama adalah <strong>pengawasan pelayanan publik</strong></li>
+                    <li>Ombudsman bersifat <strong>mandiri</strong> — tidak terikat lembaga lain</li>
+                    <li>Pahami bahwa Ombudsman juga berwenang melakukan <strong>investigasi atas prakarsa sendiri</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════
+             INDIKATOR 2 — MALADMINISTRASI
+             ═══════════════════════════════════════ -->
+        <section class="section" id="indikator2">
+            <div class="section-header">
+                <div class="section-number">2</div>
+                <div>
+                    <div class="section-indicator">Indikator 2</div>
+                    <h2 class="section-title">Pengetahuan tentang Maladministrasi</h2>
+                </div>
+            </div>
+
+            <!-- Definisi -->
+            <div class="definition">
+                <div class="definition-label">Definisi Resmi (Pasal 1 Angka 3 UU 37/2008)</div>
+                <p><strong>Maladministrasi</strong> adalah perilaku atau perbuatan <strong>melawan hukum</strong>, <strong>melampaui wewenang</strong>, menggunakan wewenang untuk <strong>tujuan lain</strong> dari yang menjadi tujuan wewenang tersebut, termasuk <strong>kelalaian</strong> atau <strong>pengabaian kewajiban hukum</strong> dalam penyelenggaraan pelayanan publik yang dilakukan oleh Penyelenggara Negara dan pemerintahan yang menimbulkan <strong>kerugian materiil dan/atau immateriil</strong> bagi masyarakat dan orang perseorangan.</p>
+            </div>
+
+            <!-- 9 Bentuk Maladministrasi -->
+            <div class="card">
+                <h3 class="card-title"><span class="icon">🚫</span> 9 Bentuk Maladministrasi</h3>
+                <p style="margin-bottom: 16px;">Berikut adalah 9 bentuk maladministrasi yang wajib dipahami:</p>
+            </div>
+
+            <div class="numbered-grid">
+                <div class="numbered-item">
+                    <div class="num red">1</div>
+                    <div>
+                        <h4>Penundaan Berlarut</h4>
+                        <p>Pelayanan yang tidak tepat waktu sehingga masyarakat harus menunggu tanpa kepastian.</p>
+                    </div>
+                </div>
+                <div class="numbered-item">
+                    <div class="num red">2</div>
+                    <div>
+                        <h4>Tidak Memberikan Pelayanan</h4>
+                        <p>Penyelenggara tidak melaksanakan tugas pelayanan kepada masyarakat yang berhak.</p>
+                    </div>
+                </div>
+                <div class="numbered-item">
+                    <div class="num red">3</div>
+                    <div>
+                        <h4>Tidak Kompeten</h4>
+                        <p>Penyelenggara tidak mampu/tidak cakap dalam menjalankan tugas pelayanan.</p>
+                    </div>
+                </div>
+                <div class="numbered-item">
+                    <div class="num red">4</div>
+                    <div>
+                        <h4>Penyalahgunaan Wewenang</h4>
+                        <p>Menggunakan kewenangan untuk tujuan selain yang dimaksud, merugikan masyarakat.</p>
+                    </div>
+                </div>
+                <div class="numbered-item">
+                    <div class="num red">5</div>
+                    <div>
+                        <h4>Permintaan Imbalan (Pungli)</h4>
+                        <p>Meminta uang/barang/jasa di luar ketentuan resmi yang berlaku.</p>
+                    </div>
+                </div>
+                <div class="numbered-item">
+                    <div class="num red">6</div>
+                    <div>
+                        <h4>Penyimpangan Prosedur</h4>
+                        <p>Tidak mengikuti prosedur/mekanisme yang telah ditetapkan dalam pelayanan.</p>
+                    </div>
+                </div>
+                <div class="numbered-item">
+                    <div class="num red">7</div>
+                    <div>
+                        <h4>Tidak Patut</h4>
+                        <p>Perilaku yang tidak layak/tidak pantas terhadap masyarakat yang dilayani.</p>
+                    </div>
+                </div>
+                <div class="numbered-item">
+                    <div class="num red">8</div>
+                    <div>
+                        <h4>Berpihak</h4>
+                        <p>Memberikan pelayanan yang tidak adil, diskriminatif, atau mengutamakan pihak tertentu.</p>
+                    </div>
+                </div>
+                <div class="numbered-item">
+                    <div class="num red">9</div>
+                    <div>
+                        <h4>Konflik Kepentingan</h4>
+                        <p>Penyelenggara memiliki kepentingan pribadi yang mempengaruhi keputusan pelayanan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabel Detail -->
+            <div class="card">
+                <h3 class="card-title"><span class="icon">📑</span> Detail & Contoh Maladministrasi</h3>
+                <div class="accordion" id="maladAccordion">
+
+                    <div class="accordion-item open">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>1. Penundaan Berlarut <em>(Undue Delay)</em></span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="accordion-body">
+                            <p>Dalam proses pemberian pelayanan, penyelenggara secara berulang-ulang menunda tanpa alasan yang jelas sehingga proses penyelesaian pelayanan menjadi tidak tepat waktu.</p>
+                            <ul>
+                                <li>Penerbitan perizinan yang melampaui batas waktu SOP</li>
+                                <li>Proses administrasi kependudukan yang tertunda berbulan-bulan</li>
+                                <li>Pencairan bantuan sosial yang tidak sesuai jadwal</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>2. Tidak Memberikan Pelayanan</span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="accordion-body">
+                            <p>Penyelenggara secara sengaja tidak memberikan pelayanan yang seharusnya diberikan kepada masyarakat.</p>
+                            <ul>
+                                <li>Menolak permohonan masyarakat tanpa dasar hukum</li>
+                                <li>Tidak melayani pengguna layanan saat jam kerja</li>
+                                <li>Mengabaikan permohonan informasi publik</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>3. Tidak Kompeten</span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="accordion-body">
+                            <p>Penyelenggara tidak mampu atau tidak cakap dalam menjalankan tugas-tugas pelayanan.</p>
+                            <ul>
+                                <li>Petugas tidak memahami prosedur pelayanan yang ditangani</li>
+                                <li>Salah memberikan informasi mengenai persyaratan</li>
+                                <li>Tidak mampu mengoperasikan sistem yang digunakan</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>4. Penyalahgunaan Wewenang</span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="accordion-body">
+                            <p>Penyelenggara menggunakan wewenangnya untuk tujuan lain dari yang menjadi tujuan wewenang tersebut diberikan.</p>
+                            <ul>
+                                <li>Menggunakan jabatan untuk kepentingan pribadi/kelompok</li>
+                                <li>Memberikan izin diluar kewenangannya</li>
+                                <li>Menetapkan kebijakan untuk menguntungkan pihak tertentu</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>5. Permintaan Imbalan / Pungli</span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="accordion-body">
+                            <p>Penyelenggara meminta imbalan uang, barang, atau jasa kepada pengguna layanan di luar ketentuan yang berlaku.</p>
+                            <ul>
+                                <li>Meminta biaya tambahan di luar tarif resmi</li>
+                                <li>Menerima hadiah/gratifikasi terkait pelayanan</li>
+                                <li>Memungut biaya untuk layanan gratis</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>6. Penyimpangan Prosedur</span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="accordion-body">
+                            <p>Penyelenggara tidak mengikuti prosedur atau mekanisme yang telah ditetapkan dalam standar pelayanan.</p>
+                            <ul>
+                                <li>Tidak mengikuti SOP yang telah ditetapkan</li>
+                                <li>Memotong atau melewati tahapan proses yang wajib</li>
+                                <li>Mengubah persyaratan tanpa dasar hukum</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>7. Tidak Patut</span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="accordion-body">
+                            <p>Penyelenggara memberikan pelayanan yang tidak wajar/tidak selayaknya atau berperilaku tidak sopan.</p>
+                            <ul>
+                                <li>Bersikap kasar atau tidak ramah kepada masyarakat</li>
+                                <li>Tidak memberikan penjelasan yang memadai</li>
+                                <li>Mengintimidasi pengguna layanan</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>8. Berpihak</span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="accordion-body">
+                            <p>Penyelenggara memberikan pelayanan yang tidak adil atau bersifat diskriminatif.</p>
+                            <ul>
+                                <li>Mendahulukan pelayanan karena kedekatan personal</li>
+                                <li>Diskriminasi berdasarkan SARA</li>
+                                <li>Perlakuan berbeda tanpa dasar hukum yang jelas</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>9. Konflik Kepentingan</span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="accordion-body">
+                            <p>Penyelenggara memiliki kepentingan pribadi yang mempengaruhi objektivitas dalam memberikan pelayanan.</p>
+                            <ul>
+                                <li>Memutuskan perkara yang melibatkan keluarga/kerabat</li>
+                                <li>Memberikan tender kepada perusahaan terkait kepentingan pribadi</li>
+                                <li>Menjadi pemohon dan pemberi izin sekaligus</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tips-box">
+                <h4>💡 Tips Menjawab Pertanyaan Indikator 2</h4>
+                <ul>
+                    <li>Hafal <strong>definisi maladministrasi</strong> sesuai UU 37/2008 Pasal 1 Angka 3</li>
+                    <li>Ingat bahwa ada <strong>9 bentuk</strong> maladministrasi — gunakan jembatan keledai: <strong>"PTP-PPP-TBK"</strong> (Penundaan, Tidak melayani, tidak komPeten, Penyalahgunaan, Pungli, Prosedur, Tidak patut, Berpihak, Konflik)</li>
+                    <li>Siapkan <strong>contoh konkret</strong> untuk setiap bentuk yang relevan dengan OPD Anda</li>
+                    <li>Maladministrasi menimbulkan kerugian <strong>materiil dan/atau immateriil</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════
+             INDIKATOR 3 — PENANGANAN PENGADUAN
+             ═══════════════════════════════════════ -->
+        <section class="section" id="indikator3">
+            <div class="section-header">
+                <div class="section-number">3</div>
+                <div>
+                    <div class="section-indicator">Indikator 3</div>
+                    <h2 class="section-title">Pengetahuan tentang Kewajiban Penanganan/Pengelolaan Pengaduan</h2>
+                </div>
+            </div>
+
+            <!-- Dasar Hukum -->
+            <div class="definition">
+                <div class="definition-label">Dasar Hukum Utama</div>
+                <p>Berdasarkan <strong>UU Nomor 25 Tahun 2009</strong> tentang Pelayanan Publik, setiap penyelenggara pelayanan publik <strong>wajib menyediakan sarana pengaduan</strong> dan menugaskan pelaksana yang kompeten dalam pengelolaan pengaduan. Dipertegas dengan <strong>Perpres Nomor 76 Tahun 2013</strong> tentang Pengelolaan Pengaduan Pelayanan Publik dan <strong>Permenpan RB Nomor 62 Tahun 2018</strong> tentang Pedoman Sistem Pengelolaan Pengaduan Pelayanan Publik Nasional.</p>
+            </div>
+
+            <!-- Kewajiban Penyelenggara -->
+            <div class="card">
+                <h3 class="card-title"><span class="icon">📌</span> Kewajiban Penyelenggara dalam Pengelolaan Pengaduan</h3>
+                <p style="margin-bottom: 16px;">Sesuai UU 25/2009 dan peraturan pelaksanaannya:</p>
+                <ol>
+                    <li><strong>Menyediakan sarana pengaduan</strong> — Menyiapkan sarana dan prasarana (kotak pengaduan, formulir, hotline, website, media sosial, dll)</li>
+                    <li><strong>Menugaskan pelaksana yang kompeten</strong> — Menunjuk pejabat/petugas pengelola pengaduan yang memahami substansi pelayanan</li>
+                    <li><strong>Mengelola pengaduan</strong> — Menerima, menanggapi, memproses, dan menyelesaikan setiap pengaduan</li>
+                    <li><strong>Menyalurkan pengaduan yang bukan kewenangannya</strong> — Meneruskan pengaduan ke instansi yang berwenang jika di luar kompetensi</li>
+                    <li><strong>Memberikan informasi status pengaduan</strong> — Memberitahukan kepada pengadu mengenai perkembangan penyelesaian pengaduan</li>
+                    <li><strong>Merahasiakan identitas pengadu</strong> — Melindungi identitas pelapor sesuai ketentuan peraturan perundang-undangan</li>
+                    <li><strong>Bertanggung jawab atas pengelolaan pengaduan</strong> — Pimpinan bertanggung jawab atas seluruh proses pengelolaan pengaduan</li>
+                </ol>
+            </div>
+
+            <!-- Sarana Pengaduan -->
+            <div class="card">
+                <h3 class="card-title"><span class="icon">📞</span> Sarana Pengaduan yang Wajib Tersedia</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Jenis Sarana</th>
+                                <th>Keterangan</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>📦 Kotak Pengaduan/Saran</td>
+                                <td>Ditempatkan di area yang mudah dijangkau masyarakat</td>
+                                <td>Wajib</td>
+                            </tr>
+                            <tr>
+                                <td>📝 Formulir Pengaduan</td>
+                                <td>Tersedia di tempat pelayanan dan dapat diunduh</td>
+                                <td>Wajib</td>
+                            </tr>
+                            <tr>
+                                <td>📱 Telepon/SMS/WA</td>
+                                <td>Nomor khusus pengaduan yang aktif dan dikelola</td>
+                                <td>Wajib</td>
+                            </tr>
+                            <tr>
+                                <td>📧 Email</td>
+                                <td>Alamat email khusus untuk menerima pengaduan</td>
+                                <td>Wajib</td>
+                            </tr>
+                            <tr>
+                                <td>🌐 Website/Aplikasi</td>
+                                <td>Portal pengaduan daring yang terintegrasi</td>
+                                <td>Wajib</td>
+                            </tr>
+                            <tr>
+                                <td>💬 Media Sosial</td>
+                                <td>Akun resmi yang responsif terhadap aduan masyarakat</td>
+                                <td>Disarankan</td>
+                            </tr>
+                            <tr>
+                                <td>🏢 Tatap Muka</td>
+                                <td>Loket/ruang pengaduan dengan petugas khusus</td>
+                                <td>Wajib</td>
+                            </tr>
+                            <tr>
+                                <td>📲 SP4N-LAPOR!</td>
+                                <td>Terintegrasi dengan Sistem Pengelolaan Pengaduan Pelayanan Publik Nasional</td>
+                                <td>Wajib</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- SP4N-LAPOR! -->
+            <div class="card">
+                <h3 class="card-title"><span class="icon">🔗</span> SP4N-LAPOR! (Layanan Aspirasi dan Pengaduan Online Rakyat)</h3>
+                <p style="margin-bottom: 12px;">Sistem Pengelolaan Pengaduan Pelayanan Publik Nasional yang terintegrasi secara nasional.</p>
+                
+                <div class="highlight-box blue">
+                    <p><strong>Kewajiban terkait SP4N-LAPOR!:</strong></p>
+                    <ul style="padding-left: 18px; margin-top: 8px;">
+                        <li>Setiap OPD <strong>wajib terhubung</strong> dengan SP4N-LAPOR!</li>
+                        <li>Menunjuk <strong>admin/pengelola</strong> SP4N-LAPOR! di instansi</li>
+                        <li>Merespons pengaduan paling lambat <strong>5 (lima) hari kerja</strong></li>
+                        <li>Menindaklanjuti dan menyelesaikan pengaduan sesuai <strong>batas waktu yang ditetapkan</strong></li>
+                        <li>Memberikan <strong>informasi tindak lanjut</strong> kepada pelapor</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Mekanisme Penanganan -->
+            <div class="card">
+                <h3 class="card-title"><span class="icon">🔄</span> Mekanisme/Alur Penanganan Pengaduan</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tahap</th>
+                                <th>Kegiatan</th>
+                                <th>Keterangan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. Penerimaan</td>
+                                <td>Menerima pengaduan dari seluruh sarana yang tersedia</td>
+                                <td>Berikan tanda terima/nomor registrasi</td>
+                            </tr>
+                            <tr>
+                                <td>2. Pencatatan</td>
+                                <td>Mencatat dan meregistrasi pengaduan dalam sistem</td>
+                                <td>Catat identitas, substansi, waktu</td>
+                            </tr>
+                            <tr>
+                                <td>3. Penelaahan</td>
+                                <td>Mengidentifikasi dan mengklasifikasi pengaduan</td>
+                                <td>Tentukan apakah pengaduan berdasar dan sesuai kewenangan</td>
+                            </tr>
+                            <tr>
+                                <td>4. Penyaluran</td>
+                                <td>Meneruskan ke unit yang berwenang menangani</td>
+                                <td>Jika bukan kewenangan, teruskan ke instansi terkait</td>
+                            </tr>
+                            <tr>
+                                <td>5. Penyelesaian</td>
+                                <td>Menyelesaikan permasalahan yang diadukan</td>
+                                <td>Sesuai batas waktu dan standar yang ditetapkan</td>
+                            </tr>
+                            <tr>
+                                <td>6. Pemberitahuan</td>
+                                <td>Menginformasikan hasil penyelesaian kepada pengadu</td>
+                                <td>Melalui sarana yang dapat dijangkau pengadu</td>
+                            </tr>
+                            <tr>
+                                <td>7. Pelaporan</td>
+                                <td>Membuat laporan berkala pengelolaan pengaduan</td>
+                                <td>Rekapitulasi dan evaluasi periodik</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Standar Pelayanan -->
+            <div class="card">
+                <h3 class="card-title"><span class="icon">📋</span> Komponen Standar Pelayanan (UU 25/2009)</h3>
+                <p style="margin-bottom: 12px;">Setiap penyelenggara wajib menyusun, menetapkan, dan menerapkan Standar Pelayanan yang sekurang-kurangnya memuat:</p>
+                
+                <div class="numbered-grid">
+                    <div class="numbered-item">
+                        <div class="num">1</div>
+                        <div>
+                            <h4>Dasar Hukum</h4>
+                            <p>Peraturan yang menjadi dasar penyelenggaraan pelayanan</p>
+                        </div>
+                    </div>
+                    <div class="numbered-item">
+                        <div class="num">2</div>
+                        <div>
+                            <h4>Persyaratan</h4>
+                            <p>Syarat yang harus dipenuhi untuk memperoleh layanan</p>
+                        </div>
+                    </div>
+                    <div class="numbered-item">
+                        <div class="num">3</div>
+                        <div>
+                            <h4>Sistem, Mekanisme, Prosedur</h4>
+                            <p>Tata cara pelayanan dari awal hingga selesai</p>
+                        </div>
+                    </div>
+                    <div class="numbered-item">
+                        <div class="num">4</div>
+                        <div>
+                            <h4>Jangka Waktu</h4>
+                            <p>Waktu yang diperlukan untuk menyelesaikan pelayanan</p>
+                        </div>
+                    </div>
+                    <div class="numbered-item">
+                        <div class="num">5</div>
+                        <div>
+                            <h4>Biaya/Tarif</h4>
+                            <p>Ongkos yang dikenakan kepada penerima layanan</p>
+                        </div>
+                    </div>
+                    <div class="numbered-item">
+                        <div class="num">6</div>
+                        <div>
+                            <h4>Produk Pelayanan</h4>
+                            <p>Hasil pelayanan yang diterima sesuai ketentuan</p>
+                        </div>
+                    </div>
+                    <div class="numbered-item">
+                        <div class="num">7</div>
+                        <div>
+                            <h4>Sarana & Prasarana</h4>
+                            <p>Peralatan dan fasilitas yang dibutuhkan</p>
+                        </div>
+                    </div>
+                    <div class="numbered-item">
+                        <div class="num">8</div>
+                        <div>
+                            <h4>Kompetensi Pelaksana</h4>
+                            <p>Kemampuan yang harus dimiliki pelaksana</p>
+                        </div>
+                    </div>
+                    <div class="numbered-item">
+                        <div class="num">9</div>
+                        <div>
+                            <h4>Pengawasan Internal</h4>
+                            <p>Sistem pengendalian intern dalam pelayanan</p>
+                        </div>
+                    </div>
+                    <div class="numbered-item">
+                        <div class="num">10</div>
+                        <div>
+                            <h4>Penanganan Pengaduan</h4>
+                            <p>Tata cara pengaduan dan penyelesaiannya</p>
+                        </div>
+                    </div>
+                    <div class="numbered-item">
+                        <div class="num">11</div>
+                        <div>
+                            <h4>Jumlah Pelaksana</h4>
+                            <p>Ketersediaan petugas sesuai beban kerja</p>
+                        </div>
+                    </div>
+                    <div class="numbered-item">
+                        <div class="num">12</div>
+                        <div>
+                            <h4>Jaminan Pelayanan</h4>
+                            <p>Kepastian pelayanan sesuai standar</p>
+                        </div>
+                    </div>
+                    <div class="numbered-item">
+                        <div class="num">13</div>
+                        <div>
+                            <h4>Jaminan Keamanan & Keselamatan</h4>
+                            <p>Kepastian keamanan dan keselamatan dalam pelayanan</p>
+                        </div>
+                    </div>
+                    <div class="numbered-item">
+                        <div class="num">14</div>
+                        <div>
+                            <h4>Evaluasi Kinerja</h4>
+                            <p>Penilaian untuk mengetahui seberapa jauh pelaksanaan kegiatan sesuai standar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sanksi -->
+            <div class="card">
+                <h3 class="card-title"><span class="icon">⚠️</span> Sanksi bagi Penyelenggara yang Tidak Patuh</h3>
+                <div class="highlight-box red">
+                    <p><strong>Berdasarkan UU 25/2009 Pasal 54:</strong></p>
+                    <ul style="padding-left: 18px; margin-top: 8px;">
+                        <li><strong>Teguran tertulis</strong> — peringatan pertama</li>
+                        <li><strong>Pembebasan dari jabatan</strong> — untuk pelanggaran serius</li>
+                        <li><strong>Penurunan gaji</strong> sebesar satu kali kenaikan gaji berkala untuk paling lama 1 tahun</li>
+                        <li><strong>Penurunan pangkat</strong> pada pangkat yang setingkat lebih rendah untuk paling lama 1 tahun</li>
+                        <li><strong>Pemberhentian dengan hormat tidak atas permintaan sendiri</strong></li>
+                        <li><strong>Pemberhentian tidak dengan hormat</strong></li>
+                        <li><strong>Pembekuan misi dan/atau izin</strong> yang diterbitkan oleh instansi pemerintah</li>
+                        <li><strong>Pencabutan izin</strong> yang diterbitkan oleh instansi pemerintah</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tips-box">
+                <h4>💡 Tips Menjawab Pertanyaan Indikator 3</h4>
+                <ul>
+                    <li>Sebutkan bahwa kewajiban pengelolaan pengaduan diatur dalam <strong>UU 25/2009</strong>, <strong>Perpres 76/2013</strong>, dan <strong>Permenpan RB 62/2018</strong></li>
+                    <li>Pahami <strong>7 tahap alur penanganan pengaduan</strong> (Terima → Catat → Telaah → Salurkan → Selesaikan → Beritahu → Laporkan)</li>
+                    <li>Tunjukkan bahwa OPD Anda telah <strong>terhubung SP4N-LAPOR!</strong> dan ada pengelola yang ditunjuk</li>
+                    <li>Ketahui <strong>sarana pengaduan</strong> apa saja yang tersedia di OPD Anda</li>
+                    <li>Pastikan Anda tahu <strong>14 komponen standar pelayanan</strong> sesuai UU 25/2009</li>
+                    <li>Ingat: Pengaduan harus direspons <strong>paling lambat 5 hari kerja</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════
+             RINGKASAN / QUICK REFERENCE
+             ═══════════════════════════════════════ -->
+        <section class="section" id="ringkasan">
+            <div class="section-header">
+                <div class="section-number" style="background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark));">★</div>
+                <div>
+                    <div class="section-indicator">Ringkasan</div>
+                    <h2 class="section-title">Kartu Referensi Cepat</h2>
+                </div>
+            </div>
+
+            <div class="quick-ref">
+                <h3>⚡ Hal-Hal yang WAJIB Diingat</h3>
+                <div class="quick-ref-grid">
+                    <div class="quick-ref-item">
+                        <h4>UU Ombudsman</h4>
+                        <p>UU No. 37 Tahun 2008 tentang Ombudsman RI</p>
+                    </div>
+                    <div class="quick-ref-item">
+                        <h4>UU Pelayanan Publik</h4>
+                        <p>UU No. 25 Tahun 2009 tentang Pelayanan Publik</p>
+                    </div>
+                    <div class="quick-ref-item">
+                        <h4>Sifat Ombudsman</h4>
+                        <p>Lembaga negara yang mandiri, tanpa hubungan organik</p>
+                    </div>
+                    <div class="quick-ref-item">
+                        <h4>Fungsi Utama</h4>
+                        <p>Mengawasi penyelenggaraan pelayanan publik</p>
+                    </div>
+                    <div class="quick-ref-item">
+                        <h4>Bentuk Maladmin</h4>
+                        <p>9 bentuk: PTP-PPP-TBK</p>
+                    </div>
+                    <div class="quick-ref-item">
+                        <h4>Respon Pengaduan</h4>
+                        <p>Maks. 5 hari kerja melalui SP4N-LAPOR!</p>
+                    </div>
+                    <div class="quick-ref-item">
+                        <h4>Standar Pelayanan</h4>
+                        <p>14 komponen wajib sesuai UU 25/2009</p>
+                    </div>
+                    <div class="quick-ref-item">
+                        <h4>Zona Penilaian</h4>
+                        <p>🟢 Hijau (88+) 🟡 Kuning (55-87,99) 🔴 Merah (&lt;55)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pertanyaan yang Mungkin Ditanyakan -->
+            <div class="card">
+                <h3 class="card-title"><span class="icon">❓</span> Contoh Pertanyaan yang Mungkin Diajukan</h3>
+                
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>"Apa yang Anda ketahui tentang Ombudsman RI?"</span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="accordion-body">
+                            <p><strong>Contoh Jawaban:</strong> "Ombudsman RI adalah lembaga negara yang bersifat mandiri dan tidak memiliki hubungan organik dengan lembaga negara lainnya. Dibentuk berdasarkan UU 37 Tahun 2008, Ombudsman bertugas mengawasi penyelenggaraan pelayanan publik yang diselenggarakan oleh penyelenggara negara dan pemerintahan, termasuk BUMN, BUMD, dan badan swasta yang diberi tugas menyelenggarakan pelayanan publik."</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>"Apa itu maladministrasi? Sebutkan bentuk-bentuknya!"</span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="accordion-body">
+                            <p><strong>Contoh Jawaban:</strong> "Maladministrasi adalah perilaku atau perbuatan melawan hukum, melampaui wewenang, atau menggunakan wewenang untuk tujuan lain, termasuk kelalaian atau pengabaian kewajiban hukum dalam pelayanan publik yang menimbulkan kerugian bagi masyarakat. Ada 9 bentuk: penundaan berlarut, tidak memberikan pelayanan, tidak kompeten, penyalahgunaan wewenang, permintaan imbalan/pungli, penyimpangan prosedur, tidak patut, berpihak, dan konflik kepentingan."</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>"Bagaimana OPD Anda mengelola pengaduan masyarakat?"</span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="accordion-body">
+                            <p><strong>Contoh Jawaban:</strong> "OPD kami telah menyediakan berbagai sarana pengaduan seperti kotak saran, formulir, nomor telepon/WhatsApp, email, dan terintegrasi dengan SP4N-LAPOR!. Kami telah menunjuk petugas khusus pengelola pengaduan. Alurnya dimulai dari penerimaan, pencatatan, penelaahan, penyaluran ke unit terkait, penyelesaian, pemberitahuan kepada pengadu, dan pelaporan berkala. Kami merespons setiap pengaduan paling lambat 5 hari kerja."</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>"Apa saja komponen standar pelayanan?"</span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="accordion-body">
+                            <p><strong>Contoh Jawaban:</strong> "Sesuai UU 25 Tahun 2009, standar pelayanan harus memuat 14 komponen, di antaranya: dasar hukum, persyaratan, sistem/mekanisme/prosedur, jangka waktu, biaya/tarif, produk pelayanan, sarana prasarana, kompetensi pelaksana, pengawasan internal, penanganan pengaduan, jumlah pelaksana, jaminan pelayanan, jaminan keamanan dan keselamatan, serta evaluasi kinerja."</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>"Apa fungsi dan tugas Ombudsman RI?"</span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="accordion-body">
+                            <p><strong>Contoh Jawaban:</strong> "Fungsi Ombudsman RI adalah mengawasi penyelenggaraan pelayanan publik. Tugasnya meliputi menerima laporan atas dugaan maladministrasi, melakukan pemeriksaan substansi, menindaklanjuti laporan, melakukan investigasi atas prakarsa sendiri, koordinasi dengan lembaga lain, membangun jaringan kerja, serta melakukan upaya pencegahan maladministrasi."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Checklist Persiapan -->
+            <div class="card">
+                <h3 class="card-title"><span class="icon">✅</span> Checklist Persiapan Kepala OPD</h3>
+                <div class="highlight-box green">
+                    <p><strong>Sebelum Penilaian, Pastikan Anda:</strong></p>
+                    <ul style="padding-left: 18px; margin-top: 8px;">
+                        <li>☑ Memahami <strong>definisi, fungsi, tugas, dan wewenang</strong> Ombudsman RI</li>
+                        <li>☑ Menghafal <strong>9 bentuk maladministrasi</strong> beserta contoh relevan di OPD</li>
+                        <li>☑ Mengetahui <strong>dasar hukum</strong>: UU 37/2008, UU 25/2009, Perpres 76/2013</li>
+                        <li>☑ Memahami <strong>alur penanganan pengaduan</strong> 7 tahap</li>
+                        <li>☑ Mengetahui <strong>sarana pengaduan</strong> yang tersedia di OPD</li>
+                        <li>☑ Memastikan OPD terhubung <strong>SP4N-LAPOR!</strong></li>
+                        <li>☑ Menghafal <strong>14 komponen standar pelayanan</strong></li>
+                        <li>☑ Menyiapkan <strong>contoh konkret</strong> implementasi di OPD</li>
+                        <li>☑ Mengetahui <strong>zona penilaian</strong> dan target kepatuhan</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ═══════════════════════════════════════════
+         FOOTER
+         ═══════════════════════════════════════════ -->
+    <footer class="footer">
+        <p>📘 Buku Saku Persiapan Penilaian Kepatuhan Ombudsman RI</p>
+        <p style="margin-top: 8px;">Disusun sebagai panduan ringkas untuk Kepala OPD • Tahun 2025</p>
+        <p style="margin-top: 8px; font-size: 12px; opacity: 0.7;">Sumber: UU 37/2008, UU 25/2009, Perpres 76/2013, Permenpan RB 62/2018</p>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top no-print" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+    <!-- ═══════════════════════════════════════════
+         JAVASCRIPT
+         ═══════════════════════════════════════════ -->
+    <script>
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 20);
+        });
+
+        // Mobile navigation toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navLinks = document.getElementById('navLinks');
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+
+        // Close mobile nav on link click
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+            });
+        });
+
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('.section');
+        const navItems = document.querySelectorAll('.nav-links a');
+
+        function updateActiveNav() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href') === '#' + current) {
+                    item.classList.add('active');
+                }
+            });
+        }
+        window.addEventListener('scroll', updateActiveNav);
+
+        // Accordion toggle
+        function toggleAccordion(header) {
+            const item = header.parentElement;
+            const wasOpen = item.classList.contains('open');
+            
+            // Close all in the same accordion
+            const accordion = item.parentElement;
+            accordion.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('open'));
+            
+            // Toggle the clicked one
+            if (!wasOpen) {
+                item.classList.add('open');
+            }
+        }
+
+        // Scroll to top button
+        const scrollTopBtn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', () => {
+            scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+        });
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Animate sections on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationDelay = '0.1s';
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Print function
+        function printBook() {
+            window.print();
+        }
+    </script>
+
+</body>
+</html>
