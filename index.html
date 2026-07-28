@@ -100,16 +100,12 @@
             text-decoration: none;
         }
 
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light));
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            box-shadow: 0 4px 12px rgba(232, 150, 62, 0.3);
+        .logo-img {
+            width: 42px;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.25));
         }
 
         .logo-text {
@@ -824,7 +820,7 @@
     <header class="header" id="header">
         <div class="header-inner">
             <a href="#" class="logo">
-                <img src="https://bengkalis-in-figures.bengkaliskab.go.id/img/logo.png" alt="Logo Bengkalis" style="width: 40px; height: auto;">
+                <img src="logo-bengkalis.png" alt="Logo Bengkalis" class="logo-img">
                 <div>
                     <span class="logo-text">Bagian Organisasi</span>
                     <span class="logo-subtitle">Sekretariat Daerah Kabupaten Bengkalis</span>
@@ -860,8 +856,8 @@
                     <div class="hero-stat-label">Bentuk Maladministrasi</div>
                 </div>
                 <div class="hero-stat">
-                    <div class="hero-stat-number">∞</div>
-                    <div class="hero-stat-label">Komitmen Pelayanan</div>
+                    <div class="hero-stat-number">14</div>
+                    <div class="hero-stat-label">Komponen Standar</div>
                 </div>
             </div>
         </div>
@@ -953,9 +949,9 @@
                 <div class="highlight-box blue">
                     <p><strong>📌 Kategori Penilaian (Zona):</strong></p>
                     <ul style="padding-left: 18px; margin-top: 8px;">
-                        <li>🟢 <strong>Zona Hijau</strong> — Kepatuhan Tinggi (skor 88–110)</li>
-                        <li>🟡 <strong>Zona Kuning</strong> — Kepatuhan Sedang (skor 55–87,99)</li>
-                        <li>🔴 <strong>Zona Merah</strong> — Kepatuhan Rendah (skor 0–54,99)</li>
+                        <li>🟢 <strong>Zona Hijau</strong> — Kepatuhan Tinggi (skor 88–100)</li>
+                        <li>🟡 <strong>Zona Kuning</strong> — Kepatuhan Sedang (skor 78–87.99)</li>
+                        <li>🔴 <strong>Zona Merah</strong> — Kepatuhan Rendah (skor di bawah 78)</li>
                     </ul>
                 </div>
             </div>
@@ -1560,7 +1556,7 @@
                     </div>
                     <div class="quick-ref-item">
                         <h4>Zona Penilaian</h4>
-                        <p>🟢 Hijau (88+) 🟡 Kuning (55-87,99) 🔴 Merah (&lt;55)</p>
+                        <p>🟢 Hijau (88-100) 🟡 Kuning (78-87,99) 🔴 Merah (&lt;78)</p>
                     </div>
                 </div>
             </div>
