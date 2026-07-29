@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buku Saku — Persiapan Penilaian Kepatuhan Ombudsman RI</title>
-    <meta name="description" content="Buku Saku Digital untuk Kepala OPD dalam menghadapi Penilaian Kepatuhan Standar Pelayanan Publik oleh Ombudsman RI">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="Buku Saku Digital untuk Kepala OPD dalam menghadapi Penilaian Kepatuhan Standar Pelayanan Publik oleh Ombudsman RI">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         /* ═══════════════════════════════════════════
            DESIGN SYSTEM & CSS VARIABLES
@@ -27,10 +31,10 @@
             --color-text-secondary: #5a6178;
             --color-border: #e2e6ed;
             --color-highlight: #fffbf0;
-            --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-            --shadow-md: 0 4px 6px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.04);
-            --shadow-lg: 0 10px 25px rgba(0,0,0,0.08), 0 4px 10px rgba(0,0,0,0.04);
-            --shadow-xl: 0 20px 50px rgba(0,0,0,0.12), 0 8px 20px rgba(0,0,0,0.06);
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.04);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.08), 0 4px 10px rgba(0, 0, 0, 0.04);
+            --shadow-xl: 0 20px 50px rgba(0, 0, 0, 0.12), 0 8px 20px rgba(0, 0, 0, 0.06);
             --radius-sm: 8px;
             --radius-md: 12px;
             --radius-lg: 16px;
@@ -43,7 +47,9 @@
         /* ═══════════════════════════════════════════
            RESET & BASE
            ═══════════════════════════════════════════ */
-        *, *::before, *::after {
+        *,
+        *::before,
+        *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -75,12 +81,12 @@
             background: rgba(26, 58, 92, 0.95);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             transition: var(--transition);
         }
 
         .header.scrolled {
-            box-shadow: 0 4px 30px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
         }
 
         .header-inner {
@@ -105,7 +111,7 @@
             height: auto;
             display: block;
             object-fit: contain;
-            filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.25));
+            filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
         }
 
         .logo-text {
@@ -118,7 +124,7 @@
 
         .logo-subtitle {
             font-size: 11px;
-            color: rgba(255,255,255,0.6);
+            color: rgba(255, 255, 255, 0.6);
             font-weight: 400;
             display: block;
             letter-spacing: 0.5px;
@@ -132,7 +138,7 @@
 
         .nav-links a {
             text-decoration: none;
-            color: rgba(255,255,255,0.75);
+            color: rgba(255, 255, 255, 0.75);
             font-size: 13px;
             font-weight: 500;
             padding: 8px 16px;
@@ -141,9 +147,10 @@
             white-space: nowrap;
         }
 
-        .nav-links a:hover, .nav-links a.active {
+        .nav-links a:hover,
+        .nav-links a.active {
             color: #fff;
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
         }
 
         .mobile-toggle {
@@ -174,7 +181,7 @@
             right: -20%;
             width: 600px;
             height: 600px;
-            background: radial-gradient(circle, rgba(232,150,62,0.15) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(232, 150, 62, 0.15) 0%, transparent 70%);
             border-radius: 50%;
         }
 
@@ -185,7 +192,7 @@
             left: -10%;
             width: 400px;
             height: 400px;
-            background: radial-gradient(circle, rgba(52,152,219,0.1) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(52, 152, 219, 0.1) 0%, transparent 70%);
             border-radius: 50%;
         }
 
@@ -201,8 +208,8 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: rgba(232,150,62,0.15);
-            border: 1px solid rgba(232,150,62,0.3);
+            background: rgba(232, 150, 62, 0.15);
+            border: 1px solid rgba(232, 150, 62, 0.3);
             padding: 6px 18px;
             border-radius: 50px;
             font-size: 13px;
@@ -232,7 +239,7 @@
 
         .hero p {
             font-size: clamp(15px, 2vw, 18px);
-            color: rgba(255,255,255,0.7);
+            color: rgba(255, 255, 255, 0.7);
             max-width: 650px;
             margin: 0 auto 32px;
             line-height: 1.7;
@@ -259,7 +266,7 @@
 
         .hero-stat-label {
             font-size: 12px;
-            color: rgba(255,255,255,0.5);
+            color: rgba(255, 255, 255, 0.5);
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-top: 4px;
@@ -302,7 +309,7 @@
             font-weight: 800;
             color: #fff;
             flex-shrink: 0;
-            box-shadow: 0 4px 12px rgba(26,58,92,0.3);
+            box-shadow: 0 4px 12px rgba(26, 58, 92, 0.3);
         }
 
         .section-title {
@@ -352,13 +359,15 @@
             font-size: 22px;
         }
 
-        .card p, .card li {
+        .card p,
+        .card li {
             color: var(--color-text-secondary);
             font-size: 15px;
             line-height: 1.8;
         }
 
-        .card ul, .card ol {
+        .card ul,
+        .card ol {
             padding-left: 20px;
             margin-top: 8px;
         }
@@ -374,7 +383,7 @@
         /* Highlight Box */
         .highlight-box {
             background: linear-gradient(135deg, #fffbf0, #fff8e7);
-            border: 1px solid rgba(232,150,62,0.25);
+            border: 1px solid rgba(232, 150, 62, 0.25);
             border-left: 4px solid var(--color-accent);
             border-radius: var(--radius-md);
             padding: 20px 24px;
@@ -383,19 +392,19 @@
 
         .highlight-box.blue {
             background: linear-gradient(135deg, #f0f7ff, #e8f2ff);
-            border-color: rgba(52,152,219,0.25);
+            border-color: rgba(52, 152, 219, 0.25);
             border-left-color: var(--color-info);
         }
 
         .highlight-box.green {
             background: linear-gradient(135deg, #f0fdf4, #e8fae8);
-            border-color: rgba(46,204,113,0.25);
+            border-color: rgba(46, 204, 113, 0.25);
             border-left-color: var(--color-success);
         }
 
         .highlight-box.red {
             background: linear-gradient(135deg, #fdf0f0, #fae8e8);
-            border-color: rgba(231,76,60,0.25);
+            border-color: rgba(231, 76, 60, 0.25);
             border-left-color: var(--color-danger);
         }
 
@@ -440,7 +449,7 @@
         .definition p {
             font-size: 16px;
             line-height: 1.8;
-            color: rgba(255,255,255,0.92);
+            color: rgba(255, 255, 255, 0.92);
         }
 
         .definition strong {
@@ -614,7 +623,8 @@
             padding: 0 24px 20px;
         }
 
-        .accordion-body p, .accordion-body li {
+        .accordion-body p,
+        .accordion-body li {
             font-size: 14.5px;
             color: var(--color-text-secondary);
             line-height: 1.8;
@@ -632,7 +642,7 @@
         /* Tips Box */
         .tips-box {
             background: linear-gradient(135deg, #f0fdf4, #e0f8e6);
-            border: 1px solid rgba(46,204,113,0.2);
+            border: 1px solid rgba(46, 204, 113, 0.2);
             border-radius: var(--radius-lg);
             padding: 24px 28px;
             margin: 20px 0;
@@ -677,7 +687,7 @@
             right: -20%;
             width: 300px;
             height: 300px;
-            background: radial-gradient(circle, rgba(232,150,62,0.2) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(232, 150, 62, 0.2) 0%, transparent 70%);
             border-radius: 50%;
         }
 
@@ -697,8 +707,8 @@
         }
 
         .quick-ref-item {
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.15);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: var(--radius-md);
             padding: 16px;
             backdrop-filter: blur(10px);
@@ -715,7 +725,7 @@
 
         .quick-ref-item p {
             font-size: 14px;
-            color: rgba(255,255,255,0.85);
+            color: rgba(255, 255, 255, 0.85);
             line-height: 1.6;
         }
 
@@ -724,7 +734,7 @@
             background: var(--color-primary-dark);
             padding: 32px 24px;
             text-align: center;
-            color: rgba(255,255,255,0.5);
+            color: rgba(255, 255, 255, 0.5);
             font-size: 13px;
         }
 
@@ -735,24 +745,61 @@
 
         /* Print Styles */
         @media print {
-            .header { position: static; }
-            .hero { margin-top: 0; padding: 40px 20px; }
-            .card:hover { transform: none; box-shadow: none; }
-            .numbered-item:hover { transform: none; }
-            body { font-size: 12px; }
-            .no-print { display: none !important; }
-            .accordion-body { max-height: none !important; padding: 0 24px 20px !important; }
+            .header {
+                position: static;
+            }
+
+            .hero {
+                margin-top: 0;
+                padding: 40px 20px;
+            }
+
+            .card:hover {
+                transform: none;
+                box-shadow: none;
+            }
+
+            .numbered-item:hover {
+                transform: none;
+            }
+
+            body {
+                font-size: 12px;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+
+            .accordion-body {
+                max-height: none !important;
+                padding: 0 24px 20px !important;
+            }
         }
 
         /* Animations */
         @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* Scroll to top button */
@@ -787,7 +834,10 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .nav-links { display: none; }
+            .nav-links {
+                display: none;
+            }
+
             .nav-links.open {
                 display: flex;
                 flex-direction: column;
@@ -795,23 +845,54 @@
                 top: 70px;
                 left: 0;
                 right: 0;
-                background: rgba(26,58,92,0.98);
+                background: rgba(26, 58, 92, 0.98);
                 padding: 16px;
                 gap: 4px;
-                border-bottom: 1px solid rgba(255,255,255,0.1);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             }
-            .mobile-toggle { display: block; }
-            .hero { padding: 50px 20px 40px; }
-            .hero-stats { gap: 24px; flex-wrap: wrap; }
-            .hero-stat-number { font-size: 24px; }
-            .section-header { flex-direction: column; align-items: flex-start; gap: 8px; }
-            .numbered-grid { grid-template-columns: 1fr; }
-            .quick-ref-grid { grid-template-columns: 1fr; }
-            .card { padding: 20px; }
-            .quick-ref { padding: 24px; }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .hero {
+                padding: 50px 20px 40px;
+            }
+
+            .hero-stats {
+                gap: 24px;
+                flex-wrap: wrap;
+            }
+
+            .hero-stat-number {
+                font-size: 24px;
+            }
+
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .numbered-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .quick-ref-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .quick-ref {
+                padding: 24px;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <!-- ═══════════════════════════════════════════
@@ -820,7 +901,9 @@
     <header class="header" id="header">
         <div class="header-inner">
             <a href="#" class="logo">
-                <img src="data:image/png;base64,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uIHlhMeMGXNJSnJKufW9hfpIte6rjQC94Lnq53h95ut73t68eTOGYeB0OklISOCee+7hlltu4amnngKgsrKSqVOn0rlzZ5588kleeOEFRITs7GyemP4Es2bNon+wP/I3gY/ssNU9wfZGTPVZrpDbhW4ruzHz2Zm89NpLdCrotNcUp06dSnV1Nddffz3YseE89thjzJgxg379+gGQkZHBnDlz9tSnvuP5O/AP87ceDKHtCrPyAkid0D6v/b+/++67hw+W1KwP9AVfeeWVdb369brC4/ZY1vsWeoneJ8gyXLjj3dupj7VIe/HFFxk3blyTrw0fPpzMzEwqKir4/e9/T5cuXaiqquKSSy7B5XLR2Nty3PHH8cVXX3DjlTcS9248cpegflC29alMwb8E5xMOLjnpEr785ktOO731SvIJCQk888wzrFmzhjvvvBOlFJmZmXhijTOj0Si9evWiuLiYVatWUbi+kM/9n7dellDZ6TtqpkI2WqSnp2859thjLz4YrPmAGDpaG8VFxau6de+WWFlWOUp+EHQvjaS1kq7hgdLSMsYljaO2vpYnnniCrKwsFi1aRGVFJSlJKcQnxMdK8hbzwgsvcM011zBo0CB27drF6aefjtaahQsXUl9fT0ZGBl6vlwkTJzB+wjgKFxey+dXNtm/6bRiQOIBnn3uWK66+goSEpsaJmTNnsnr16iZnqsvlYuLEifj9fnr3ts/mFctW8Oprr/LmW2/y2muvsXr1apYvX05WdhYzymdAdisAu0D/28D62CIhIcE/fPjwM2bOnPn9wVRhDwrAIsJXX301f9asWUfUlNb0UOsV6giFJLQAsrIFnm5V3ViycAknnHgC/fv2Z9PaTdxx9x089sJjbN2xlc7ZneneszvHHXccd955J3379uWkk04CYP369YwfP57MzEyOPPJIIpEIhmGQl5fHWWefRXZWNhu+2MCFv7uQp597ei+hqHHM2bXXXkvHjh3p1q0b8+bNo7q6mi5dutC7d282/rCR6+66jmv+eg0p7hTOPu1szjnnHIYMHcL8+fMpLytnefxyu3KstbdQpecbWK+ZeFwe6dO3z2ULFix462DbKNTBvPhtt92WMX369I+Ki4uH6M4auVzstMlmWe8UwUmrTmLkwJFcefmVXH7b5bxb8S7VOdWYySb4IW1NGlcOvJLrrrgOw2NQXl5Obm4ulZWVnHfeeZSUlHD99dezYcMGCgoKOPPMM5s6M2pr96oS5/P5WLZsGSNGjMDhcOzRay+55BLGjx9PYWEh99x7D53yOjH96encNvs2SgaU2MVDSyC+KJ6jnEfzj6sfQDkUt/3lNuYlz6N0TGnTZ3SDXqSxnhac4qBnr55/X7169W3/iSP/kAAY4Pe//33BrFmzPi4rK+uuumu4ROz+g9EGidazxMPEzRMp6FjAysBK5rafa+uPVtPcM1bCsOLhPHLlwww7chgAN9xwAzk5OezcuZPi4mL8fj/PPvssycnJbNmyBa/XS1ZWVotzW7BgAVOnTmXcuHHceOONHHHEEXuMK++88w4PPPAAvmofV/71Cl6JzLBb3eoGZ4qddg9ZX2fxt7F/o6KqguJAMY/FPQY5sbnvBvdZC0fUQbfu3R5ds2bNFUqpn8UWaRzsG3z33XfVJ5100tySnSXH+ot8qXqTRvVVDUlY9TCpfBKje43m7g/vZvPEzXaRm90dRaXRKxd2ZOzgjddeJ6k8maFDhtKnXx8mTJjAP/7xD7777jtmzpxJu3btuPXWW5k+fTqzZ8+mrKyM7t274/P58Hg8PPHEE7Rr146srCyWLl1Knz59uOSSS/D5fAwePJjevXtz/PHHs2LJCqb+ZSqfdvwMBjZKHJdGmy8OfJ19fDT7I9w73MTHx7PUu9SmcicYX2ms5ywcpoPOXTo/tXbt2suVUhY/0zB+jpusWrWq7PgTjv+8tLR0sq/Il6rWKVRPhaQI+KDXzl6Y4SiLhy2xd350H4ndHgh1D/Hhog8pmV/ClMlTcLqd+Hw+LrzwQvr378/8+fOZPn06b7/9NpMnT+b555+npKSE2bNns3nzZhYvXswZZ5xBcnIyr732Glu3buWee+4hFArRo0cPEhISeOu1tzjzX2exeUyhPafIPlJUNUhPYYNzA0tZCl1saVnPNrBesXAqJ926d3s8Bq7JzzgcP9eN3njjjZVnnHHGCXPnzn2zdGtpb/WgQv9eY/WyeC/rPdsokNvGepgAY+DJVU+y6Y+beObvz3DRRRft+cqWLVvo06cPwWCQa6+9ltNOO428vDymTZtGZWUld9555x4z5KBBg4iLi+P444/f8/sH7n+Av3z7F8LHhZs2ktxXHrJpu0ZxxuK13lRYn5m4XW66de9218qVK2/+udjyQdWD9zVmzpz5w5QpU45t3779AlWmsB6y0PM09AL67mfF8zDQBz7r9RnHXnssS75esuejY489ltraWh544AG+//57qqur6d69O6FQiAceeIBnnnmGV155BRHh/PPP57TTbF045A9x5XVXcu2aawn/KmyvjrV//FCXaNQjCuszi/i4+FDffn0v/+GHH276b4D7s7HoxmPp0qU1999//9trfljTsb6ivp+51ET7DOgaK0+1PwtqAclQllPGrJdn0dPdkx69ehAfH8/xxx+PZVkcffTRnHrqqTidTubPn89ll13GMcccw5w5cxg5ciSZmZmkpqZSuauS8687n+f0czCcttXQaBZAr5dq5EmQrRZpaWnFgwcPnvbNN9+88nNIy/81KXofurIeMGDAXzZu2Hirz+9z6m4afgNWQQtxV21Z4Ah453i5/5j7ueSyS1r8Wnl5OUlJSbhcrr3CV39727l81XWBvdEi+5f2omoV6n2NNcfEwCA3L/eL0aNH//GVV15Z99/21av/6s2VYuzYsceuWLHi0Yryis7iBX2CQsYL4pL9W+jdKTPz4fr867n95ttxeX88aWnh/IX89oFz2TBivW2BirRdelEo1HKFvAVSbBEfFx/u3KXzA08++eTto0aNCnAIDHUoTOLyyy/P++ijj+7bvm37maFwCN1Nw6/B2t3nz9zP9j5LYWpgKo///fF9hge99vJrXPbmZVSMrdg7xmtfh5oBukjDB2AtsjAwyMzO/P6II4649tNPP/3sv8mSD0mAY8XWGDFixDlr1669vbK8sqNlWOgjNfxKsHKkoYBZW7MFN8GANQN46uqnGHrU0KbymT/M7ffezv+t+z+iY6NtE6ZihUdVmUZ9DtYXAgEhMTGxrqCg4OFLL730vosuuqiGQ2wYh8pELMti27ZtKy699NLXK6sqvUFfsH9oY8ghC0H7NSorVh2ONpzPJpAOJVklvPnamyRVJDF44GCUodiwagO/+/PveMZ8Butoq/XW7I1XyAmqUqNna+QlQVYJXodX8vPz3xkzZsx5c+fOffX9998PcQgOdShOSmvNcccdN3LVqlU379q567hAKACJCn2UgqMFK1saAgekDUrgQjjNcRoju47k/q/vp3hw8b51bhWjVlGwA9QChfWNBXXgcXlol5U5r0fPnvfMnTv3o+bhOocB3p/j1OlkzJgxx61bt+7a8tLysYFQADygB2k40i48Lh5pqFO5r3N5R6wJVb+YeaeFPN/duczKp+w611+DtcLOU/K6vWS2y/iia7duD82ZM+f9n9si9T8JcGOVavLkyZPWr19/WXlp+SSf3+cUBFWgUEMVHGE3dxSjUZy0tEDNupl+2xjUkIJtCrUMrGUCJYJGE58Q72+X1e7jLl26PDF79uw5P6cd+f8bgBsLYieeeOLQdevW/a6kpGRKXVVdTkQidgBbV4Xqr5CeQJYgbmnqFJCmgCKg6hVqu4JVIKsF2W7/xuP0kJSatCErK+vNgQMHvvLKK6+s/k+y7A8D/BP05zvuuCPrgw8+OK64uPiMyorKIwP1gYQoUfvsbK9Q3RXSDTtHOFWQ3TbiMmVHd6wHa6NlFzcF3Iab+KT4nekZ6XPy8/Nfv+KKK76YMmVKHb/woX7pD+BwOLjgggu6LVu2bFJpaekJNdU1Q/11/vSwGbYbLrtBZQPJsVY/5TZFazQet0cSkhMKU1JS5ufm5v574sSJ82+55ZayQ0mP/f8e4OZg33TTTblffvnlsJKSkmOqq6tH+up9PYL+YLIZNXG5XeKJ8+xMSk5akZaWNj8/P3/eVVddtWLcuHH1h1Qu0GGA255Sc+WVV+avXr26d3V1dcfc3NzvJ02atOGqq66q+KWeqYfH4XF4HB6Hx+FxePwyxv8DmasYRl5qdtoAAAAASUVORK5CYII=" alt="Logo Bengkalis" class="logo-img" style="width: 42px; height: auto; display: block; object-fit: contain; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.25));">
+                <img src="data:image/png;base64,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uIHlhMeMGXNJSnJKufW9hfpIte6rjQC94Lnq53h95ut73t68eTOGYeB0OklISOCee+7hlltu4amnngKgsrKSqVOn0rlzZ5588kleeOEFRITs7GyemP4Es2bNon+wP/I3gY/ssNU9wfZGTPVZrpDbhW4ruzHz2Zm89NpLdCrotNcUp06dSnV1Nddffz3YseE89thjzJgxg379+gGQkZHBnDlz9tSnvuP5O/AP87ceDKHtCrPyAkid0D6v/b+/++67hw+W1KwP9AVfeeWVdb369brC4/ZY1vsWeoneJ8gyXLjj3dupj7VIe/HFFxk3blyTrw0fPpzMzEwqKir4/e9/T5cuXaiqquKSSy7B5XLR2Nty3PHH8cVXX3DjlTcS9248cpegflC29alMwb8E5xMOLjnpEr785ktOO731SvIJCQk888wzrFmzhjvvvBOlFJmZmXhijTOj0Si9evWiuLiYVatWUbi+kM/9n7dellDZ6TtqpkI2WqSnp2859thjLz4YrPmAGDpaG8VFxau6de+WWFlWOUp+EHQvjaS1kq7hgdLSMsYljaO2vpYnnniCrKwsFi1aRGVFJSlJKcQnxMdK8hbzwgsvcM011zBo0CB27drF6aefjtaahQsXUl9fT0ZGBl6vlwkTJzB+wjgKFxey+dXNtm/6bRiQOIBnn3uWK66+goSEpsaJmTNnsnr16iZnqsvlYuLEifj9fnr3ts/mFctW8Oprr/LmW2/y2muvsXr1apYvX05WdhYzymdAdisAu0D/28D62CIhIcE/fPjwM2bOnPn9wVRhDwrAIsJXX301f9asWUfUlNb0UOsV6giFJLQAsrIFnm5V3ViycAknnHgC/fv2Z9PaTdxx9x089sJjbN2xlc7ZneneszvHHXccd955J3379uWkk04CYP369YwfP57MzEyOPPJIIpEIhmGQl5fHWWefRXZWNhu+2MCFv7uQp597ei+hqHHM2bXXXkvHjh3p1q0b8+bNo7q6mi5dutC7d282/rCR6+66jmv+eg0p7hTOPu1szjnnHIYMHcL8+fMpLytnefxyu3KstbdQpecbWK+ZeFwe6dO3z2ULFix462DbKNTBvPhtt92WMX369I+Ki4uH6M4auVzstMlmWe8UwUmrTmLkwJFcefmVXH7b5bxb8S7VOdWYySb4IW1NGlcOvJLrrrgOw2NQXl5Obm4ulZWVnHfeeZSUlHD99dezYcMGCgoKOPPMM5s6M2pr96oS5/P5WLZsGSNGjMDhcOzRay+55BLGjx9PYWEh99x7D53yOjH96encNvs2SgaU2MVDSyC+KJ6jnEfzj6sfQDkUt/3lNuYlz6N0TGnTZ3SDXqSxnhac4qBnr55/X7169W3/iSP/kAAY4Pe//33BrFmzPi4rK+uuumu4ROz+g9EGidazxMPEzRMp6FjAysBK5rafa+uPVtPcM1bCsOLhPHLlwww7chgAN9xwAzk5OezcuZPi4mL8fj/PPvssycnJbNmyBa/XS1ZWVotzW7BgAVOnTmXcuHHceOONHHHEEXuMK++88w4PPPAAvmofV/71Cl6JzLBb3eoGZ4qddg9ZX2fxt7F/o6KqguJAMY/FPQY5sbnvBvdZC0fUQbfu3R5ds2bNFUqpn8UWaRzsG3z33XfVJ5100tySnSXH+ot8qXqTRvVVDUlY9TCpfBKje43m7g/vZvPEzXaRm90dRaXRKxd2ZOzgjddeJ6k8maFDhtKnXx8mTJjAP/7xD7777jtmzpxJu3btuPXWW5k+fTqzZ8+mrKyM7t274/P58Hg8PPHEE7Rr146srCyWLl1Knz59uOSSS/D5fAwePJjevXtz/PHHs2LJCqb+ZSqfdvwMBjZKHJdGmy8OfJ19fDT7I9w73MTHx7PUu9SmcicYX2ms5ywcpoPOXTo/tXbt2suVUhY/0zB+jpusWrWq7PgTjv+8tLR0sq/Il6rWKVRPhaQI+KDXzl6Y4SiLhy2xd350H4ndHgh1D/Hhog8pmV/ClMlTcLqd+Hw+LrzwQvr378/8+fOZPn06b7/9NpMnT+b555+npKSE2bNns3nzZhYvXswZZ5xBcnIyr732Glu3buWee+4hFArRo0cPEhISeOu1tzjzX2exeUyhPafIPlJUNUhPYYNzA0tZCl1saVnPNrBesXAqJ926d3s8Bq7JzzgcP9eN3njjjZVnnHHGCXPnzn2zdGtpb/WgQv9eY/WyeC/rPdsokNvGepgAY+DJVU+y6Y+beObvz3DRRRft+cqWLVvo06cPwWCQa6+9ltNOO428vDymTZtGZWUld9555x4z5KBBg4iLi+P444/f8/sH7n+Av3z7F8LHhZs2ktxXHrJpu0ZxxuK13lRYn5m4XW66de9218qVK2/+udjyQdWD9zVmzpz5w5QpU45t3779AlWmsB6y0PM09AL67mfF8zDQBz7r9RnHXnssS75esuejY489ltraWh544AG+//57qqur6d69O6FQiAceeIBnnnmGV155BRHh/PPP57TTbF045A9x5XVXcu2aawn/KmyvjrV//FCXaNQjCuszi/i4+FDffn0v/+GHH276b4D7s7HoxmPp0qU1999//9trfljTsb6ivp+51ET7DOgaK0+1PwtqAclQllPGrJdn0dPdkx69ehAfH8/xxx+PZVkcffTRnHrqqTidTubPn89ll13GMcccw5w5cxg5ciSZmZmkpqZSuauS8687n+f0czCcttXQaBZAr5dq5EmQrRZpaWnFgwcPnvbNN9+88nNIy/81KXofurIeMGDAXzZu2Hirz+9z6m4afgNWQQtxV21Z4Ah453i5/5j7ueSyS1r8Wnl5OUlJSbhcrr3CV39727l81XWBvdEi+5f2omoV6n2NNcfEwCA3L/eL0aNH//GVV15Z99/21av/6s2VYuzYsceuWLHi0Yryis7iBX2CQsYL4pL9W+jdKTPz4fr867n95ttxeX88aWnh/IX89oFz2TBivW2BirRdelEo1HKFvAVSbBEfFx/u3KXzA08++eTto0aNCnAIDHUoTOLyyy/P++ijj+7bvm37maFwCN1Nw6/B2t3nz9zP9j5LYWpgKo///fF9hge99vJrXPbmZVSMrdg7xmtfh5oBukjDB2AtsjAwyMzO/P6II4649tNPP/3sv8mSD0mAY8XWGDFixDlr1669vbK8sqNlWOgjNfxKsHKkoYBZW7MFN8GANQN46uqnGHrU0KbymT/M7ffezv+t+z+iY6NtE6ZihUdVmUZ9DtYXAgEhMTGxrqCg4OFLL730vosuuqiGQ2wYh8pELMti27ZtKy699NLXK6sqvUFfsH9oY8ghC0H7NSorVh2ONpzPJpAOJVklvPnamyRVJDF44GCUodiwagO/+/PveMZ8Butoq/XW7I1XyAmqUqNna+QlQVYJXodX8vPz3xkzZsx5c+fOffX9998PcQgOdShOSmvNcccdN3LVqlU379q567hAKACJCn2UgqMFK1saAgekDUrgQjjNcRoju47k/q/vp3hw8b51bhWjVlGwA9QChfWNBXXgcXlol5U5r0fPnvfMnTv3o+bhOocB3p/j1OlkzJgxx61bt+7a8tLysYFQADygB2k40i48Lh5pqFO5r3N5R6wJVb+YeaeFPN/duczKp+w611+DtcLOU/K6vWS2y/iia7duD82ZM+f9n9si9T8JcGOVavLkyZPWr19/WXlp+SSf3+cUBFWgUEMVHGE3dxSjUZy0tEDNupl+2xjUkIJtCrUMrGUCJYJGE58Q72+X1e7jLl26PDF79uw5P6cd+f8bgBsLYieeeOLQdevW/a6kpGRKXVVdTkQidgBbV4Xqr5CeQJYgbmnqFJCmgCKg6hVqu4JVIKsF2W7/xuP0kJSatCErK+vNgQMHvvLKK6+s/k+y7A8D/BP05zvuuCPrgw8+OK64uPiMyorKIwP1gYQoUfvsbK9Q3RXSDTtHOFWQ3TbiMmVHd6wHa6NlFzcF3Iab+KT4nekZ6XPy8/Nfv+KKK76YMmVKHb/woX7pD+BwOLjgggu6LVu2bFJpaekJNdU1Q/11/vSwGbYbLrtBZQPJsVY/5TZFazQet0cSkhMKU1JS5ufm5v574sSJ82+55ZayQ0mP/f8e4OZg33TTTblffvnlsJKSkmOqq6tH+up9PYL+YLIZNXG5XeKJ8+xMSk5akZaWNj8/P3/eVVddtWLcuHH1h1Qu0GGA255Sc+WVV+avXr26d3V1dcfc3NzvJ02atOGqq66q+KWeqYfH4XF4HB6Hx+FxePwyxv8DmasYRl5qdtoAAAAASUVORK5CYII="
+                    alt="Logo Bengkalis" class="logo-img"
+                    style="width: 42px; height: auto; display: block; object-fit: contain; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.25));">
                 <div>
                     <span class="logo-text">Bagian Organisasi</span>
                     <span class="logo-subtitle">Sekretariat Daerah Kabupaten Bengkalis</span>
@@ -845,14 +928,16 @@
         <div class="hero-content">
             <div class="hero-badge">📋 Panduan Persiapan Penilaian Kepatuhan</div>
             <h1>Buku Saku <span>Ombudsman RI</span></h1>
-            <p>Panduan ringkas untuk Kepala OPD. pejabat pengaduan, pengelola pelayanan, dan pengelola pengaduan dalam memahami indikator pengetahuan yang dinilai pada penilaian maladministrasi pelayanan publik oleh Ombudsman Republik Indonesia.</p>
+            <p>Panduan ringkas untuk Kepala OPD, pejabat pengaduan, pengelola pelayanan, dan pengelola pengaduan dalam
+                memahami indikator pengetahuan yang dinilai pada penilaian maladministrasi pelayanan publik oleh
+                Ombudsman Republik Indonesia.</p>
             <div class="hero-stats">
                 <div class="hero-stat">
                     <div class="hero-stat-number">3</div>
                     <div class="hero-stat-label">Indikator Utama</div>
                 </div>
                 <div class="hero-stat">
-                    <div class="hero-stat-number">9</div>
+                    <div class="hero-stat-number">12</div>
                     <div class="hero-stat-label">Bentuk Maladministrasi</div>
                 </div>
                 <div class="hero-stat">
@@ -883,7 +968,13 @@
             <!-- Definisi -->
             <div class="definition">
                 <div class="definition-label">Definisi Resmi</div>
-                <p><strong>Ombudsman Republik Indonesia</strong> adalah lembaga negara yang bersifat <strong>mandiri</strong> dan <strong>tidak memiliki hubungan organik</strong> dengan lembaga negara dan instansi pemerintahan lainnya, yang bertugas <strong>mengawasi penyelenggaraan pelayanan publik</strong> baik yang diselenggarakan oleh penyelenggara negara dan pemerintahan, termasuk yang diselenggarakan oleh BUMN, BUMD, dan Badan Swasta atau perseorangan yang diberi tugas menyelenggarakan pelayanan publik tertentu yang sebagian atau seluruh dananya bersumber dari APBN dan/atau APBD.</p>
+                <p><strong>Ombudsman Republik Indonesia</strong> adalah lembaga negara yang bersifat
+                    <strong>mandiri</strong> dan <strong>tidak memiliki hubungan organik</strong> dengan lembaga negara
+                    dan instansi pemerintahan lainnya, yang bertugas <strong>mengawasi penyelenggaraan pelayanan
+                        publik</strong> baik yang diselenggarakan oleh penyelenggara negara dan pemerintahan, termasuk
+                    yang diselenggarakan oleh BUMN, BUMD, dan Badan Swasta atau perseorangan yang diberi tugas
+                    menyelenggarakan pelayanan publik tertentu yang sebagian atau seluruh dananya bersumber dari APBN
+                    dan/atau APBD.</p>
             </div>
 
             <!-- Dasar Hukum -->
@@ -892,7 +983,8 @@
                 <ul>
                     <li><strong>UU Nomor 37 Tahun 2008</strong> tentang Ombudsman Republik Indonesia</li>
                     <li><strong>UU Nomor 25 Tahun 2009</strong> tentang Pelayanan Publik</li>
-                    <li><strong>Peraturan Ombudsman RI Nomor 22 Tahun 2016</strong> tentang Penilaian Kepatuhan terhadap Standar Pelayanan Publik</li>
+                    <li><strong>Peraturan Ombudsman RI Nomor 22 Tahun 2016</strong> tentang Penilaian Kepatuhan terhadap
+                        Standar Pelayanan Publik</li>
                 </ul>
             </div>
 
@@ -900,13 +992,17 @@
             <div class="card">
                 <h3 class="card-title"><span class="icon">📋</span> Tugas Pokok Ombudsman RI</h3>
                 <ol>
-                    <li>Menerima laporan atas dugaan <strong>maladministrasi</strong> dalam penyelenggaraan pelayanan publik</li>
+                    <li>Menerima laporan atas dugaan <strong>maladministrasi</strong> dalam penyelenggaraan pelayanan
+                        publik</li>
                     <li>Melakukan <strong>pemeriksaan substansi</strong> atas laporan</li>
                     <li>Menindaklanjuti laporan yang tercakup dalam ruang lingkup kewenangan Ombudsman</li>
-                    <li>Melakukan <strong>investigasi</strong> atas prakarsa sendiri terhadap dugaan maladministrasi</li>
-                    <li>Melakukan <strong>koordinasi dan kerja sama</strong> dengan lembaga negara atau lembaga pemerintahan lainnya serta lembaga kemasyarakatan dan perseorangan</li>
+                    <li>Melakukan <strong>investigasi</strong> atas prakarsa sendiri terhadap dugaan maladministrasi
+                    </li>
+                    <li>Melakukan <strong>koordinasi dan kerja sama</strong> dengan lembaga negara atau lembaga
+                        pemerintahan lainnya serta lembaga kemasyarakatan dan perseorangan</li>
                     <li>Membangun jaringan kerja</li>
-                    <li>Melakukan upaya <strong>pencegahan maladministrasi</strong> dalam penyelenggaraan pelayanan publik</li>
+                    <li>Melakukan upaya <strong>pencegahan maladministrasi</strong> dalam penyelenggaraan pelayanan
+                        publik</li>
                     <li>Melakukan tugas lain yang diberikan oleh undang-undang</li>
                 </ol>
             </div>
@@ -914,28 +1010,37 @@
             <!-- Fungsi & Wewenang -->
             <div class="card">
                 <h3 class="card-title"><span class="icon">🔍</span> Fungsi Ombudsman</h3>
-                <p>Ombudsman berfungsi <strong>mengawasi penyelenggaraan pelayanan publik</strong> yang diselenggarakan oleh Penyelenggara Negara dan pemerintahan baik di pusat maupun di daerah termasuk yang diselenggarakan oleh BUMN, BUMD, dan Badan Swasta atau perseorangan yang diberi tugas menyelenggarakan pelayanan publik tertentu.</p>
+                <p>Ombudsman berfungsi <strong>mengawasi penyelenggaraan pelayanan publik</strong> yang diselenggarakan
+                    oleh Penyelenggara Negara dan pemerintahan baik di pusat maupun di daerah termasuk yang
+                    diselenggarakan oleh BUMN, BUMD, dan Badan Swasta atau perseorangan yang diberi tugas
+                    menyelenggarakan pelayanan publik tertentu.</p>
             </div>
 
             <div class="card">
                 <h3 class="card-title"><span class="icon">⚡</span> Wewenang Ombudsman RI</h3>
                 <ul>
-                    <li>Meminta keterangan secara lisan dan/atau tertulis dari Pelapor, Terlapor, atau pihak lain yang terkait</li>
-                    <li>Memeriksa keputusan, surat-menyurat, atau dokumen lain yang ada pada Pelapor ataupun Terlapor</li>
+                    <li>Meminta keterangan secara lisan dan/atau tertulis dari Pelapor, Terlapor, atau pihak lain yang
+                        terkait</li>
+                    <li>Memeriksa keputusan, surat-menyurat, atau dokumen lain yang ada pada Pelapor ataupun Terlapor
+                    </li>
                     <li>Meminta klarifikasi dan/atau salinan atau fotokopi dokumen yang diperlukan</li>
                     <li>Melakukan pemanggilan terhadap Pelapor, Terlapor, dan pihak lain yang terkait</li>
-                    <li>Menyelesaikan laporan melalui <strong>mediasi dan konsiliasi</strong> atas permintaan para pihak</li>
+                    <li>Menyelesaikan laporan melalui <strong>mediasi dan konsiliasi</strong> atas permintaan para pihak
+                    </li>
                     <li>Membuat <strong>rekomendasi</strong> mengenai penyelesaian laporan</li>
                     <li>Demi kepentingan umum mengumumkan hasil temuan, kesimpulan, dan rekomendasi</li>
-                    <li>Menyampaikan saran kepada presiden, kepala daerah, atau pimpinan Penyelenggara Negara lainnya guna perbaikan dan penyempurnaan organisasi dan/atau prosedur pelayanan publik</li>
+                    <li>Menyampaikan saran kepada presiden, kepala daerah, atau pimpinan Penyelenggara Negara lainnya
+                        guna perbaikan dan penyempurnaan organisasi dan/atau prosedur pelayanan publik</li>
                 </ul>
             </div>
 
             <!-- Penilaian Kepatuhan -->
             <div class="card">
                 <h3 class="card-title"><span class="icon">📊</span> Tentang Penilaian Kepatuhan</h3>
-                <p style="margin-bottom: 12px;">Penilaian Kepatuhan adalah kegiatan yang dilakukan Ombudsman RI untuk menilai tingkat kepatuhan penyelenggara pelayanan publik terhadap standar pelayanan publik sesuai UU 25/2009.</p>
-                
+                <p style="margin-bottom: 12px;">Penilaian Kepatuhan adalah kegiatan yang dilakukan Ombudsman RI untuk
+                    menilai tingkat kepatuhan penyelenggara pelayanan publik terhadap standar pelayanan publik sesuai UU
+                    25/2009.</p>
+
                 <div class="highlight-box">
                     <p><strong>🎯 Tujuan Penilaian Kepatuhan:</strong></p>
                     <ul style="padding-left: 18px; margin-top: 8px;">
@@ -960,10 +1065,12 @@
                 <h4>💡 Tips Menjawab Pertanyaan Indikator 1</h4>
                 <ul>
                     <li>Pastikan Anda hafal <strong>definisi Ombudsman</strong> sebagai lembaga negara yang mandiri</li>
-                    <li>Sebutkan <strong>UU 37/2008</strong> dan <strong>UU 25/2009</strong> sebagai dasar hukum utama</li>
+                    <li>Sebutkan <strong>UU 37/2008</strong> dan <strong>UU 25/2009</strong> sebagai dasar hukum utama
+                    </li>
                     <li>Tekankan bahwa fungsi utama adalah <strong>pengawasan pelayanan publik</strong></li>
                     <li>Ombudsman bersifat <strong>mandiri</strong> — tidak terikat lembaga lain</li>
-                    <li>Pahami bahwa Ombudsman juga berwenang melakukan <strong>investigasi atas prakarsa sendiri</strong></li>
+                    <li>Pahami bahwa Ombudsman juga berwenang melakukan <strong>investigasi atas prakarsa
+                            sendiri</strong></li>
                 </ul>
             </div>
         </section>
@@ -983,77 +1090,108 @@
             <!-- Definisi -->
             <div class="definition">
                 <div class="definition-label">Definisi Resmi (Pasal 1 Angka 3 UU 37/2008)</div>
-                <p><strong>Maladministrasi</strong> adalah perilaku atau perbuatan <strong>melawan hukum</strong>, <strong>melampaui wewenang</strong>, menggunakan wewenang untuk <strong>tujuan lain</strong> dari yang menjadi tujuan wewenang tersebut, termasuk <strong>kelalaian</strong> atau <strong>pengabaian kewajiban hukum</strong> dalam penyelenggaraan pelayanan publik yang dilakukan oleh Penyelenggara Negara dan pemerintahan yang menimbulkan <strong>kerugian materiil dan/atau immateriil</strong> bagi masyarakat dan orang perseorangan.</p>
+                <p><strong>Maladministrasi</strong> adalah perilaku atau perbuatan <strong>melawan hukum</strong>,
+                    <strong>melampaui wewenang</strong>, menggunakan wewenang untuk <strong>tujuan lain</strong> dari
+                    yang menjadi tujuan wewenang tersebut, termasuk <strong>kelalaian</strong> atau <strong>pengabaian
+                        kewajiban hukum</strong> dalam penyelenggaraan pelayanan publik yang dilakukan oleh
+                    Penyelenggara Negara dan pemerintahan yang menimbulkan <strong>kerugian materiil dan/atau
+                        immateriil</strong> bagi masyarakat dan orang perseorangan.</p>
             </div>
 
-            <!-- 9 Bentuk Maladministrasi -->
+            <!-- 12 Bentuk Maladministrasi -->
             <div class="card">
-                <h3 class="card-title"><span class="icon">🚫</span> 9 Bentuk Maladministrasi</h3>
-                <p style="margin-bottom: 16px;">Berikut adalah 9 bentuk maladministrasi yang wajib dipahami:</p>
+                <h3 class="card-title"><span class="icon">🚫</span> 12 Bentuk Maladministrasi</h3>
+                <p style="margin-bottom: 16px;">Berdasarkan <strong>Pasal 5 Peraturan Ombudsman RI No. 58 Tahun
+                        2023</strong>, berikut adalah 12 bentuk maladministrasi yang wajib dipahami:</p>
             </div>
 
             <div class="numbered-grid">
                 <div class="numbered-item">
                     <div class="num red">1</div>
                     <div>
+                        <h4>Perilaku atau Perbuatan Melawan Hukum</h4>
+                        <p>Tindakan penyelenggara yang bertentangan dengan peraturan perundang-undangan yang berlaku.
+                        </p>
+                    </div>
+                </div>
+                <div class="numbered-item">
+                    <div class="num red">2</div>
+                    <div>
+                        <h4>Kelalaian atau Pengabaian Kewajiban Hukum</h4>
+                        <p>Penyelenggara tidak melaksanakan kewajiban yang seharusnya dilakukan berdasarkan ketentuan
+                            hukum.</p>
+                    </div>
+                </div>
+                <div class="numbered-item">
+                    <div class="num red">3</div>
+                    <div>
                         <h4>Penundaan Berlarut</h4>
                         <p>Pelayanan yang tidak tepat waktu sehingga masyarakat harus menunggu tanpa kepastian.</p>
                     </div>
                 </div>
                 <div class="numbered-item">
-                    <div class="num red">2</div>
+                    <div class="num red">4</div>
                     <div>
                         <h4>Tidak Memberikan Pelayanan</h4>
                         <p>Penyelenggara tidak melaksanakan tugas pelayanan kepada masyarakat yang berhak.</p>
                     </div>
                 </div>
                 <div class="numbered-item">
-                    <div class="num red">3</div>
+                    <div class="num red">5</div>
                     <div>
                         <h4>Tidak Kompeten</h4>
                         <p>Penyelenggara tidak mampu/tidak cakap dalam menjalankan tugas pelayanan.</p>
                     </div>
                 </div>
                 <div class="numbered-item">
-                    <div class="num red">4</div>
+                    <div class="num red">6</div>
                     <div>
                         <h4>Penyalahgunaan Wewenang</h4>
                         <p>Menggunakan kewenangan untuk tujuan selain yang dimaksud, merugikan masyarakat.</p>
                     </div>
                 </div>
                 <div class="numbered-item">
-                    <div class="num red">5</div>
-                    <div>
-                        <h4>Permintaan Imbalan (Pungli)</h4>
-                        <p>Meminta uang/barang/jasa di luar ketentuan resmi yang berlaku.</p>
-                    </div>
-                </div>
-                <div class="numbered-item">
-                    <div class="num red">6</div>
-                    <div>
-                        <h4>Penyimpangan Prosedur</h4>
-                        <p>Tidak mengikuti prosedur/mekanisme yang telah ditetapkan dalam pelayanan.</p>
-                    </div>
-                </div>
-                <div class="numbered-item">
                     <div class="num red">7</div>
                     <div>
-                        <h4>Tidak Patut</h4>
-                        <p>Perilaku yang tidak layak/tidak pantas terhadap masyarakat yang dilayani.</p>
+                        <h4>Permintaan Imbalan</h4>
+                        <p>Meminta uang/barang/jasa di luar ketentuan resmi yang berlaku (pungli/gratifikasi).</p>
                     </div>
                 </div>
                 <div class="numbered-item">
                     <div class="num red">8</div>
                     <div>
-                        <h4>Berpihak</h4>
-                        <p>Memberikan pelayanan yang tidak adil, diskriminatif, atau mengutamakan pihak tertentu.</p>
+                        <h4>Penyimpangan Prosedur</h4>
+                        <p>Tidak mengikuti prosedur/mekanisme yang telah ditetapkan dalam standar pelayanan.</p>
                     </div>
                 </div>
                 <div class="numbered-item">
                     <div class="num red">9</div>
                     <div>
+                        <h4>Bertindak Tidak Layak/Patut</h4>
+                        <p>Perilaku yang tidak wajar/tidak pantas dan tidak selayaknya terhadap masyarakat yang
+                            dilayani.</p>
+                    </div>
+                </div>
+                <div class="numbered-item">
+                    <div class="num red">10</div>
+                    <div>
+                        <h4>Berpihak</h4>
+                        <p>Memberikan pelayanan yang tidak adil atau mengutamakan kepentingan pihak tertentu.</p>
+                    </div>
+                </div>
+                <div class="numbered-item">
+                    <div class="num red">11</div>
+                    <div>
                         <h4>Konflik Kepentingan</h4>
-                        <p>Penyelenggara memiliki kepentingan pribadi yang mempengaruhi keputusan pelayanan.</p>
+                        <p>Penyelenggara memiliki kepentingan pribadi yang mempengaruhi objektivitas pelayanan.</p>
+                    </div>
+                </div>
+                <div class="numbered-item">
+                    <div class="num red">12</div>
+                    <div>
+                        <h4>Diskriminasi</h4>
+                        <p>Pembedaan perlakuan pelayanan berdasarkan SARA, status sosial, atau alasan lain yang tidak
+                            relevan.</p>
                     </div>
                 </div>
             </div>
@@ -1065,11 +1203,44 @@
 
                     <div class="accordion-item open">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <span>1. Penundaan Berlarut <em>(Undue Delay)</em></span>
+                            <span>1. Perilaku atau Perbuatan Melawan Hukum</span>
                             <span class="arrow">▼</span>
                         </div>
                         <div class="accordion-body">
-                            <p>Dalam proses pemberian pelayanan, penyelenggara secara berulang-ulang menunda tanpa alasan yang jelas sehingga proses penyelesaian pelayanan menjadi tidak tepat waktu.</p>
+                            <p>Tindakan penyelenggara yang bertentangan dengan ketentuan peraturan perundang-undangan
+                                yang berlaku dalam penyelenggaraan pelayanan publik.</p>
+                            <ul>
+                                <li>Menetapkan persyaratan yang tidak diatur dalam peraturan</li>
+                                <li>Menerapkan tarif yang tidak sesuai peraturan</li>
+                                <li>Menolak pelayanan yang bertentangan dengan kewajiban hukumnya</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>2. Kelalaian atau Pengabaian Kewajiban Hukum</span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="accordion-body">
+                            <p>Penyelenggara tidak melaksanakan kewajiban yang seharusnya dilakukan berdasarkan
+                                ketentuan hukum yang berlaku.</p>
+                            <ul>
+                                <li>Tidak menyediakan sarana pengaduan sebagaimana diwajibkan</li>
+                                <li>Tidak mempublikasikan standar pelayanan</li>
+                                <li>Tidak menindaklanjuti pengaduan masyarakat</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>3. Penundaan Berlarut <em>(Undue Delay)</em></span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="accordion-body">
+                            <p>Dalam proses pemberian pelayanan, penyelenggara secara berulang-ulang menunda tanpa
+                                alasan yang jelas sehingga proses penyelesaian pelayanan menjadi tidak tepat waktu.</p>
                             <ul>
                                 <li>Penerbitan perizinan yang melampaui batas waktu SOP</li>
                                 <li>Proses administrasi kependudukan yang tertunda berbulan-bulan</li>
@@ -1080,11 +1251,12 @@
 
                     <div class="accordion-item">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <span>2. Tidak Memberikan Pelayanan</span>
+                            <span>4. Tidak Memberikan Pelayanan</span>
                             <span class="arrow">▼</span>
                         </div>
                         <div class="accordion-body">
-                            <p>Penyelenggara secara sengaja tidak memberikan pelayanan yang seharusnya diberikan kepada masyarakat.</p>
+                            <p>Penyelenggara secara sengaja tidak memberikan pelayanan yang seharusnya diberikan kepada
+                                masyarakat yang berhak.</p>
                             <ul>
                                 <li>Menolak permohonan masyarakat tanpa dasar hukum</li>
                                 <li>Tidak melayani pengguna layanan saat jam kerja</li>
@@ -1095,29 +1267,31 @@
 
                     <div class="accordion-item">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <span>3. Tidak Kompeten</span>
+                            <span>5. Tidak Kompeten</span>
                             <span class="arrow">▼</span>
                         </div>
                         <div class="accordion-body">
-                            <p>Penyelenggara tidak mampu atau tidak cakap dalam menjalankan tugas-tugas pelayanan.</p>
+                            <p>Penyelenggara tidak mampu atau tidak cakap dalam menjalankan tugas-tugas pelayanan
+                                publik.</p>
                             <ul>
                                 <li>Petugas tidak memahami prosedur pelayanan yang ditangani</li>
                                 <li>Salah memberikan informasi mengenai persyaratan</li>
-                                <li>Tidak mampu mengoperasikan sistem yang digunakan</li>
+                                <li>Tidak mampu mengoperasikan sistem pelayanan yang digunakan</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="accordion-item">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <span>4. Penyalahgunaan Wewenang</span>
+                            <span>6. Penyalahgunaan Wewenang</span>
                             <span class="arrow">▼</span>
                         </div>
                         <div class="accordion-body">
-                            <p>Penyelenggara menggunakan wewenangnya untuk tujuan lain dari yang menjadi tujuan wewenang tersebut diberikan.</p>
+                            <p>Penyelenggara menggunakan wewenangnya untuk tujuan lain dari yang menjadi tujuan wewenang
+                                tersebut diberikan.</p>
                             <ul>
                                 <li>Menggunakan jabatan untuk kepentingan pribadi/kelompok</li>
-                                <li>Memberikan izin diluar kewenangannya</li>
+                                <li>Memberikan izin di luar kewenangannya</li>
                                 <li>Menetapkan kebijakan untuk menguntungkan pihak tertentu</li>
                             </ul>
                         </div>
@@ -1125,75 +1299,97 @@
 
                     <div class="accordion-item">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <span>5. Permintaan Imbalan / Pungli</span>
+                            <span>7. Permintaan Imbalan</span>
                             <span class="arrow">▼</span>
                         </div>
                         <div class="accordion-body">
-                            <p>Penyelenggara meminta imbalan uang, barang, atau jasa kepada pengguna layanan di luar ketentuan yang berlaku.</p>
+                            <p>Penyelenggara meminta imbalan uang, barang, atau jasa kepada pengguna layanan di luar
+                                ketentuan yang berlaku (pungli/gratifikasi).</p>
                             <ul>
                                 <li>Meminta biaya tambahan di luar tarif resmi</li>
                                 <li>Menerima hadiah/gratifikasi terkait pelayanan</li>
-                                <li>Memungut biaya untuk layanan gratis</li>
+                                <li>Memungut biaya untuk layanan yang seharusnya gratis</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="accordion-item">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <span>6. Penyimpangan Prosedur</span>
+                            <span>8. Penyimpangan Prosedur</span>
                             <span class="arrow">▼</span>
                         </div>
                         <div class="accordion-body">
-                            <p>Penyelenggara tidak mengikuti prosedur atau mekanisme yang telah ditetapkan dalam standar pelayanan.</p>
+                            <p>Penyelenggara tidak mengikuti prosedur atau mekanisme yang telah ditetapkan dalam standar
+                                pelayanan publik.</p>
                             <ul>
                                 <li>Tidak mengikuti SOP yang telah ditetapkan</li>
-                                <li>Memotong atau melewati tahapan proses yang wajib</li>
-                                <li>Mengubah persyaratan tanpa dasar hukum</li>
+                                <li>Memotong atau melewati tahapan proses yang wajib dilalui</li>
+                                <li>Mengubah persyaratan tanpa dasar hukum yang jelas</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="accordion-item">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <span>7. Tidak Patut</span>
+                            <span>9. Bertindak Tidak Layak/Patut</span>
                             <span class="arrow">▼</span>
                         </div>
                         <div class="accordion-body">
-                            <p>Penyelenggara memberikan pelayanan yang tidak wajar/tidak selayaknya atau berperilaku tidak sopan.</p>
+                            <p>Penyelenggara memberikan pelayanan yang tidak wajar/tidak selayaknya atau berperilaku
+                                tidak sopan kepada masyarakat.</p>
                             <ul>
                                 <li>Bersikap kasar atau tidak ramah kepada masyarakat</li>
-                                <li>Tidak memberikan penjelasan yang memadai</li>
-                                <li>Mengintimidasi pengguna layanan</li>
+                                <li>Tidak memberikan penjelasan yang memadai tentang proses pelayanan</li>
+                                <li>Mengintimidasi atau merendahkan pengguna layanan</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="accordion-item">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <span>8. Berpihak</span>
+                            <span>10. Berpihak</span>
                             <span class="arrow">▼</span>
                         </div>
                         <div class="accordion-body">
-                            <p>Penyelenggara memberikan pelayanan yang tidak adil atau bersifat diskriminatif.</p>
+                            <p>Penyelenggara memberikan pelayanan yang tidak adil atau mengutamakan kepentingan pihak
+                                tertentu tanpa dasar hukum yang jelas.</p>
                             <ul>
-                                <li>Mendahulukan pelayanan karena kedekatan personal</li>
-                                <li>Diskriminasi berdasarkan SARA</li>
-                                <li>Perlakuan berbeda tanpa dasar hukum yang jelas</li>
+                                <li>Mendahulukan pelayanan karena kedekatan personal/relasi</li>
+                                <li>Memberikan keistimewaan kepada golongan tertentu</li>
+                                <li>Perlakuan berbeda tanpa alasan yang dapat dipertanggungjawabkan</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="accordion-item">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <span>9. Konflik Kepentingan</span>
+                            <span>11. Konflik Kepentingan</span>
                             <span class="arrow">▼</span>
                         </div>
                         <div class="accordion-body">
-                            <p>Penyelenggara memiliki kepentingan pribadi yang mempengaruhi objektivitas dalam memberikan pelayanan.</p>
+                            <p>Penyelenggara memiliki kepentingan pribadi yang mempengaruhi objektivitas dan netralitas
+                                dalam memberikan pelayanan publik.</p>
                             <ul>
-                                <li>Memutuskan perkara yang melibatkan keluarga/kerabat</li>
-                                <li>Memberikan tender kepada perusahaan terkait kepentingan pribadi</li>
+                                <li>Memutuskan perkara yang melibatkan keluarga/kerabat sendiri</li>
+                                <li>Memberikan tender/kontrak kepada perusahaan terkait kepentingan pribadi</li>
                                 <li>Menjadi pemohon dan pemberi izin sekaligus</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>12. Diskriminasi</span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="accordion-body">
+                            <p>Penyelenggara melakukan pembedaan perlakuan kepada pengguna layanan berdasarkan suku,
+                                agama, ras, antargolongan (SARA), jenis kelamin, status sosial, atau alasan lain yang
+                                tidak relevan dengan pelayanan.</p>
+                            <ul>
+                                <li>Menolak memberikan pelayanan berdasarkan latar belakang SARA</li>
+                                <li>Membedakan kualitas layanan berdasarkan status ekonomi</li>
+                                <li>Memberikan hambatan khusus kepada kelompok tertentu dalam mengakses layanan</li>
                             </ul>
                         </div>
                     </div>
@@ -1204,10 +1400,17 @@
             <div class="tips-box">
                 <h4>💡 Tips Menjawab Pertanyaan Indikator 2</h4>
                 <ul>
+                    <li>Sebutkan dasar hukum terbaru: <strong>Pasal 5 Peraturan Ombudsman RI No. 58 Tahun 2023</strong>
+                    </li>
                     <li>Hafal <strong>definisi maladministrasi</strong> sesuai UU 37/2008 Pasal 1 Angka 3</li>
-                    <li>Ingat bahwa ada <strong>9 bentuk</strong> maladministrasi — gunakan jembatan keledai: <strong>"PTP-PPP-TBK"</strong> (Penundaan, Tidak melayani, tidak komPeten, Penyalahgunaan, Pungli, Prosedur, Tidak patut, Berpihak, Konflik)</li>
+                    <li>Ingat bahwa sekarang ada <strong>12 bentuk</strong> maladministrasi — gunakan singkatan:
+                        <strong>"PM-KH-PB-TM-TK-PW-PI-PP-TL-BP-KK-DK"</strong><br>(Perbuatan Melawan hukum, Kelalaian
+                        Hukum, Penundaan Berlarut, Tidak Memberikan pelayanan, Tidak Kompeten, Penyalahgunaan Wewenang,
+                        Permintaan Imbalan, Penyimpangan Prosedur, Tidak Layak/patut, Berpihak, Konflik Kepentingan,
+                        Diskriminasi)</li>
                     <li>Siapkan <strong>contoh konkret</strong> untuk setiap bentuk yang relevan dengan OPD Anda</li>
-                    <li>Maladministrasi menimbulkan kerugian <strong>materiil dan/atau immateriil</strong></li>
+                    <li>Maladministrasi menimbulkan kerugian <strong>materiil dan/atau immateriil</strong> bagi
+                        masyarakat</li>
                 </ul>
             </div>
         </section>
@@ -1227,21 +1430,33 @@
             <!-- Dasar Hukum -->
             <div class="definition">
                 <div class="definition-label">Dasar Hukum Utama</div>
-                <p>Berdasarkan <strong>UU Nomor 25 Tahun 2009</strong> tentang Pelayanan Publik, setiap penyelenggara pelayanan publik <strong>wajib menyediakan sarana pengaduan</strong> dan menugaskan pelaksana yang kompeten dalam pengelolaan pengaduan. Dipertegas dengan <strong>Perpres Nomor 76 Tahun 2013</strong> tentang Pengelolaan Pengaduan Pelayanan Publik dan <strong>Permenpan RB Nomor 62 Tahun 2018</strong> tentang Pedoman Sistem Pengelolaan Pengaduan Pelayanan Publik Nasional.</p>
+                <p>Berdasarkan <strong>UU Nomor 25 Tahun 2009</strong> tentang Pelayanan Publik, setiap penyelenggara
+                    pelayanan publik <strong>wajib menyediakan sarana pengaduan</strong> dan menugaskan pelaksana yang
+                    kompeten dalam pengelolaan pengaduan. Dipertegas dengan <strong>Perpres Nomor 76 Tahun 2013</strong>
+                    tentang Pengelolaan Pengaduan Pelayanan Publik dan <strong>Permenpan RB Nomor 62 Tahun 2018</strong>
+                    tentang Pedoman Sistem Pengelolaan Pengaduan Pelayanan Publik Nasional.</p>
             </div>
 
             <!-- Kewajiban Penyelenggara -->
             <div class="card">
-                <h3 class="card-title"><span class="icon">📌</span> Kewajiban Penyelenggara dalam Pengelolaan Pengaduan</h3>
+                <h3 class="card-title"><span class="icon">📌</span> Kewajiban Penyelenggara dalam Pengelolaan Pengaduan
+                </h3>
                 <p style="margin-bottom: 16px;">Sesuai UU 25/2009 dan peraturan pelaksanaannya:</p>
                 <ol>
-                    <li><strong>Menyediakan sarana pengaduan</strong> — Menyiapkan sarana dan prasarana (kotak pengaduan, formulir, hotline, website, media sosial, dll)</li>
-                    <li><strong>Menugaskan pelaksana yang kompeten</strong> — Menunjuk pejabat/petugas pengelola pengaduan yang memahami substansi pelayanan</li>
-                    <li><strong>Mengelola pengaduan</strong> — Menerima, menanggapi, memproses, dan menyelesaikan setiap pengaduan</li>
-                    <li><strong>Menyalurkan pengaduan yang bukan kewenangannya</strong> — Meneruskan pengaduan ke instansi yang berwenang jika di luar kompetensi</li>
-                    <li><strong>Memberikan informasi status pengaduan</strong> — Memberitahukan kepada pengadu mengenai perkembangan penyelesaian pengaduan</li>
-                    <li><strong>Merahasiakan identitas pengadu</strong> — Melindungi identitas pelapor sesuai ketentuan peraturan perundang-undangan</li>
-                    <li><strong>Bertanggung jawab atas pengelolaan pengaduan</strong> — Pimpinan bertanggung jawab atas seluruh proses pengelolaan pengaduan</li>
+                    <li><strong>Menyediakan sarana pengaduan</strong> — Menyiapkan sarana dan prasarana (kotak
+                        pengaduan, formulir, hotline, website, media sosial, dll)</li>
+                    <li><strong>Menugaskan pelaksana yang kompeten</strong> — Menunjuk pejabat/petugas pengelola
+                        pengaduan yang memahami substansi pelayanan</li>
+                    <li><strong>Mengelola pengaduan</strong> — Menerima, menanggapi, memproses, dan menyelesaikan setiap
+                        pengaduan</li>
+                    <li><strong>Menyalurkan pengaduan yang bukan kewenangannya</strong> — Meneruskan pengaduan ke
+                        instansi yang berwenang jika di luar kompetensi</li>
+                    <li><strong>Memberikan informasi status pengaduan</strong> — Memberitahukan kepada pengadu mengenai
+                        perkembangan penyelesaian pengaduan</li>
+                    <li><strong>Merahasiakan identitas pengadu</strong> — Melindungi identitas pelapor sesuai ketentuan
+                        peraturan perundang-undangan</li>
+                    <li><strong>Bertanggung jawab atas pengelolaan pengaduan</strong> — Pimpinan bertanggung jawab atas
+                        seluruh proses pengelolaan pengaduan</li>
                 </ol>
             </div>
 
@@ -1305,16 +1520,19 @@
 
             <!-- SP4N-LAPOR! -->
             <div class="card">
-                <h3 class="card-title"><span class="icon">🔗</span> SP4N-LAPOR! (Layanan Aspirasi dan Pengaduan Online Rakyat)</h3>
-                <p style="margin-bottom: 12px;">Sistem Pengelolaan Pengaduan Pelayanan Publik Nasional yang terintegrasi secara nasional.</p>
-                
+                <h3 class="card-title"><span class="icon">🔗</span> SP4N-LAPOR! (Layanan Aspirasi dan Pengaduan Online
+                    Rakyat)</h3>
+                <p style="margin-bottom: 12px;">Sistem Pengelolaan Pengaduan Pelayanan Publik Nasional yang terintegrasi
+                    secara nasional.</p>
+
                 <div class="highlight-box blue">
                     <p><strong>Kewajiban terkait SP4N-LAPOR!:</strong></p>
                     <ul style="padding-left: 18px; margin-top: 8px;">
                         <li>Setiap OPD <strong>wajib terhubung</strong> dengan SP4N-LAPOR!</li>
                         <li>Menunjuk <strong>admin/pengelola</strong> SP4N-LAPOR! di instansi</li>
                         <li>Merespons pengaduan paling lambat <strong>5 (lima) hari kerja</strong></li>
-                        <li>Menindaklanjuti dan menyelesaikan pengaduan sesuai <strong>batas waktu yang ditetapkan</strong></li>
+                        <li>Menindaklanjuti dan menyelesaikan pengaduan sesuai <strong>batas waktu yang
+                                ditetapkan</strong></li>
                         <li>Memberikan <strong>informasi tindak lanjut</strong> kepada pelapor</li>
                     </ul>
                 </div>
@@ -1376,8 +1594,9 @@
             <!-- Standar Pelayanan -->
             <div class="card">
                 <h3 class="card-title"><span class="icon">📋</span> Komponen Standar Pelayanan (UU 25/2009)</h3>
-                <p style="margin-bottom: 12px;">Setiap penyelenggara wajib menyusun, menetapkan, dan menerapkan Standar Pelayanan yang sekurang-kurangnya memuat:</p>
-                
+                <p style="margin-bottom: 12px;">Setiap penyelenggara wajib menyusun, menetapkan, dan menerapkan Standar
+                    Pelayanan yang sekurang-kurangnya memuat:</p>
+
                 <div class="numbered-grid">
                     <div class="numbered-item">
                         <div class="num">1</div>
@@ -1488,8 +1707,10 @@
                     <ul style="padding-left: 18px; margin-top: 8px;">
                         <li><strong>Teguran tertulis</strong> — peringatan pertama</li>
                         <li><strong>Pembebasan dari jabatan</strong> — untuk pelanggaran serius</li>
-                        <li><strong>Penurunan gaji</strong> sebesar satu kali kenaikan gaji berkala untuk paling lama 1 tahun</li>
-                        <li><strong>Penurunan pangkat</strong> pada pangkat yang setingkat lebih rendah untuk paling lama 1 tahun</li>
+                        <li><strong>Penurunan gaji</strong> sebesar satu kali kenaikan gaji berkala untuk paling lama 1
+                            tahun</li>
+                        <li><strong>Penurunan pangkat</strong> pada pangkat yang setingkat lebih rendah untuk paling
+                            lama 1 tahun</li>
                         <li><strong>Pemberhentian dengan hormat tidak atas permintaan sendiri</strong></li>
                         <li><strong>Pemberhentian tidak dengan hormat</strong></li>
                         <li><strong>Pembekuan misi dan/atau izin</strong> yang diterbitkan oleh instansi pemerintah</li>
@@ -1501,9 +1722,12 @@
             <div class="tips-box">
                 <h4>💡 Tips Menjawab Pertanyaan Indikator 3</h4>
                 <ul>
-                    <li>Sebutkan bahwa kewajiban pengelolaan pengaduan diatur dalam <strong>UU 25/2009</strong>, <strong>Perpres 76/2013</strong>, dan <strong>Permenpan RB 62/2018</strong></li>
-                    <li>Pahami <strong>7 tahap alur penanganan pengaduan</strong> (Terima → Catat → Telaah → Salurkan → Selesaikan → Beritahu → Laporkan)</li>
-                    <li>Tunjukkan bahwa OPD Anda telah <strong>terhubung SP4N-LAPOR!</strong> dan ada pengelola yang ditunjuk</li>
+                    <li>Sebutkan bahwa kewajiban pengelolaan pengaduan diatur dalam <strong>UU 25/2009</strong>,
+                        <strong>Perpres 76/2013</strong>, dan <strong>Permenpan RB 62/2018</strong></li>
+                    <li>Pahami <strong>7 tahap alur penanganan pengaduan</strong> (Terima → Catat → Telaah → Salurkan →
+                        Selesaikan → Beritahu → Laporkan)</li>
+                    <li>Tunjukkan bahwa OPD Anda telah <strong>terhubung SP4N-LAPOR!</strong> dan ada pengelola yang
+                        ditunjuk</li>
                     <li>Ketahui <strong>sarana pengaduan</strong> apa saja yang tersedia di OPD Anda</li>
                     <li>Pastikan Anda tahu <strong>14 komponen standar pelayanan</strong> sesuai UU 25/2009</li>
                     <li>Ingat: Pengaduan harus direspons <strong>paling lambat 5 hari kerja</strong></li>
@@ -1516,7 +1740,8 @@
              ═══════════════════════════════════════ -->
         <section class="section" id="ringkasan">
             <div class="section-header">
-                <div class="section-number" style="background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark));">★</div>
+                <div class="section-number"
+                    style="background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark));">★</div>
                 <div>
                     <div class="section-indicator">Ringkasan</div>
                     <h2 class="section-title">Kartu Referensi Cepat</h2>
@@ -1544,7 +1769,7 @@
                     </div>
                     <div class="quick-ref-item">
                         <h4>Bentuk Maladmin</h4>
-                        <p>9 bentuk: PTP-PPP-TBK</p>
+                        <p>12 bentuk (Per. Ombudsman No. 58/2023)</p>
                     </div>
                     <div class="quick-ref-item">
                         <h4>Respon Pengaduan</h4>
@@ -1564,7 +1789,7 @@
             <!-- Pertanyaan yang Mungkin Ditanyakan -->
             <div class="card">
                 <h3 class="card-title"><span class="icon">❓</span> Contoh Pertanyaan yang Mungkin Diajukan</h3>
-                
+
                 <div class="accordion" id="faqAccordion">
                     <div class="accordion-item">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
@@ -1572,7 +1797,11 @@
                             <span class="arrow">▼</span>
                         </div>
                         <div class="accordion-body">
-                            <p><strong>Contoh Jawaban:</strong> "Ombudsman RI adalah lembaga negara yang bersifat mandiri dan tidak memiliki hubungan organik dengan lembaga negara lainnya. Dibentuk berdasarkan UU 37 Tahun 2008, Ombudsman bertugas mengawasi penyelenggaraan pelayanan publik yang diselenggarakan oleh penyelenggara negara dan pemerintahan, termasuk BUMN, BUMD, dan badan swasta yang diberi tugas menyelenggarakan pelayanan publik."</p>
+                            <p><strong>Contoh Jawaban:</strong> "Ombudsman RI adalah lembaga negara yang bersifat
+                                mandiri dan tidak memiliki hubungan organik dengan lembaga negara lainnya. Dibentuk
+                                berdasarkan UU 37 Tahun 2008, Ombudsman bertugas mengawasi penyelenggaraan pelayanan
+                                publik yang diselenggarakan oleh penyelenggara negara dan pemerintahan, termasuk BUMN,
+                                BUMD, dan badan swasta yang diberi tugas menyelenggarakan pelayanan publik."</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -1581,7 +1810,16 @@
                             <span class="arrow">▼</span>
                         </div>
                         <div class="accordion-body">
-                            <p><strong>Contoh Jawaban:</strong> "Maladministrasi adalah perilaku atau perbuatan melawan hukum, melampaui wewenang, atau menggunakan wewenang untuk tujuan lain, termasuk kelalaian atau pengabaian kewajiban hukum dalam pelayanan publik yang menimbulkan kerugian bagi masyarakat. Ada 9 bentuk: penundaan berlarut, tidak memberikan pelayanan, tidak kompeten, penyalahgunaan wewenang, permintaan imbalan/pungli, penyimpangan prosedur, tidak patut, berpihak, dan konflik kepentingan."</p>
+                            <p><strong>Contoh Jawaban:</strong> "Maladministrasi adalah perilaku atau perbuatan melawan
+                                hukum, melampaui wewenang, atau menggunakan wewenang untuk tujuan lain, termasuk
+                                kelalaian atau pengabaian kewajiban hukum dalam pelayanan publik yang menimbulkan
+                                kerugian bagi masyarakat. Berdasarkan <strong>Pasal 5 Peraturan Ombudsman RI No. 58
+                                    Tahun 2023</strong>, terdapat <strong>12 bentuk</strong> maladministrasi, yaitu: (1)
+                                Perilaku atau perbuatan melawan hukum, (2) Kelalaian atau pengabaian kewajiban hukum,
+                                (3) Penundaan berlarut, (4) Tidak memberikan pelayanan, (5) Tidak kompeten, (6)
+                                Penyalahgunaan wewenang, (7) Permintaan imbalan, (8) Penyimpangan prosedur, (9)
+                                Bertindak tidak layak/patut, (10) Berpihak, (11) Konflik kepentingan, dan (12)
+                                Diskriminasi."</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -1590,7 +1828,12 @@
                             <span class="arrow">▼</span>
                         </div>
                         <div class="accordion-body">
-                            <p><strong>Contoh Jawaban:</strong> "OPD kami telah menyediakan berbagai sarana pengaduan seperti kotak saran, formulir, nomor telepon/WhatsApp, email, dan terintegrasi dengan SP4N-LAPOR!. Kami telah menunjuk petugas khusus pengelola pengaduan. Alurnya dimulai dari penerimaan, pencatatan, penelaahan, penyaluran ke unit terkait, penyelesaian, pemberitahuan kepada pengadu, dan pelaporan berkala. Kami merespons setiap pengaduan paling lambat 5 hari kerja."</p>
+                            <p><strong>Contoh Jawaban:</strong> "OPD kami telah menyediakan berbagai sarana pengaduan
+                                seperti kotak saran, formulir, nomor telepon/WhatsApp, email, dan terintegrasi dengan
+                                SP4N-LAPOR!. Kami telah menunjuk petugas khusus pengelola pengaduan. Alurnya dimulai
+                                dari penerimaan, pencatatan, penelaahan, penyaluran ke unit terkait, penyelesaian,
+                                pemberitahuan kepada pengadu, dan pelaporan berkala. Kami merespons setiap pengaduan
+                                paling lambat 5 hari kerja."</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -1599,7 +1842,11 @@
                             <span class="arrow">▼</span>
                         </div>
                         <div class="accordion-body">
-                            <p><strong>Contoh Jawaban:</strong> "Sesuai UU 25 Tahun 2009, standar pelayanan harus memuat 14 komponen, di antaranya: dasar hukum, persyaratan, sistem/mekanisme/prosedur, jangka waktu, biaya/tarif, produk pelayanan, sarana prasarana, kompetensi pelaksana, pengawasan internal, penanganan pengaduan, jumlah pelaksana, jaminan pelayanan, jaminan keamanan dan keselamatan, serta evaluasi kinerja."</p>
+                            <p><strong>Contoh Jawaban:</strong> "Sesuai UU 25 Tahun 2009, standar pelayanan harus memuat
+                                14 komponen, di antaranya: dasar hukum, persyaratan, sistem/mekanisme/prosedur, jangka
+                                waktu, biaya/tarif, produk pelayanan, sarana prasarana, kompetensi pelaksana, pengawasan
+                                internal, penanganan pengaduan, jumlah pelaksana, jaminan pelayanan, jaminan keamanan
+                                dan keselamatan, serta evaluasi kinerja."</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -1608,7 +1855,11 @@
                             <span class="arrow">▼</span>
                         </div>
                         <div class="accordion-body">
-                            <p><strong>Contoh Jawaban:</strong> "Fungsi Ombudsman RI adalah mengawasi penyelenggaraan pelayanan publik. Tugasnya meliputi menerima laporan atas dugaan maladministrasi, melakukan pemeriksaan substansi, menindaklanjuti laporan, melakukan investigasi atas prakarsa sendiri, koordinasi dengan lembaga lain, membangun jaringan kerja, serta melakukan upaya pencegahan maladministrasi."</p>
+                            <p><strong>Contoh Jawaban:</strong> "Fungsi Ombudsman RI adalah mengawasi penyelenggaraan
+                                pelayanan publik. Tugasnya meliputi menerima laporan atas dugaan maladministrasi,
+                                melakukan pemeriksaan substansi, menindaklanjuti laporan, melakukan investigasi atas
+                                prakarsa sendiri, koordinasi dengan lembaga lain, membangun jaringan kerja, serta
+                                melakukan upaya pencegahan maladministrasi."</p>
                         </div>
                     </div>
                 </div>
@@ -1621,8 +1872,10 @@
                     <p><strong>Sebelum Penilaian, Pastikan Anda:</strong></p>
                     <ul style="padding-left: 18px; margin-top: 8px;">
                         <li>☑ Memahami <strong>definisi, fungsi, tugas, dan wewenang</strong> Ombudsman RI</li>
-                        <li>☑ Menghafal <strong>9 bentuk maladministrasi</strong> beserta contoh relevan di OPD</li>
-                        <li>☑ Mengetahui <strong>dasar hukum</strong>: UU 37/2008, UU 25/2009, Perpres 76/2013</li>
+                        <li>☑ Menghafal <strong>12 bentuk maladministrasi</strong> sesuai Peraturan Ombudsman No. 58
+                            Tahun 2023 beserta contoh relevan di OPD</li>
+                        <li>☑ Mengetahui <strong>dasar hukum</strong>: UU 37/2008, UU 25/2009, Perpres 76/2013, dan
+                            Peraturan Ombudsman No. 58/2023</li>
                         <li>☑ Memahami <strong>alur penanganan pengaduan</strong> 7 tahap</li>
                         <li>☑ Mengetahui <strong>sarana pengaduan</strong> yang tersedia di OPD</li>
                         <li>☑ Memastikan OPD terhubung <strong>SP4N-LAPOR!</strong></li>
@@ -1642,7 +1895,8 @@
     <footer class="footer">
         <p>📘 Buku Saku Persiapan Penilaian Kepatuhan Ombudsman RI</p>
         <p style="margin-top: 8px;">Disusun sebagai panduan ringkas untuk Kepala OPD • Tahun 2025</p>
-        <p style="margin-top: 8px; font-size: 12px; opacity: 0.7;">Sumber: UU 37/2008, UU 25/2009, Perpres 76/2013, Permenpan RB 62/2018</p>
+        <p style="margin-top: 8px; font-size: 12px; opacity: 0.7;">Sumber: UU 37/2008, UU 25/2009, Perpres 76/2013,
+            Permenpan RB 62/2018</p>
     </footer>
 
     <!-- Scroll to Top -->
@@ -1697,11 +1951,11 @@
         function toggleAccordion(header) {
             const item = header.parentElement;
             const wasOpen = item.classList.contains('open');
-            
+
             // Close all in the same accordion
             const accordion = item.parentElement;
             accordion.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('open'));
-            
+
             // Toggle the clicked one
             if (!wasOpen) {
                 item.classList.add('open');
@@ -1738,8 +1992,5 @@
     </script>
 
 </body>
+
 </html>
-
-
-
-
